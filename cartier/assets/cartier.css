@@ -72,22 +72,56 @@ header{
 .cartier-product{
   padding:50px 0;
   box-sizing: border-box;
+ 
 }
 
 
 .cartier-product-text{
   text-align: center;
+  padding:100px 0;
 }
 
 
+.cartier-product-img{
+  position:relative;
+  height: 1800px;
+  padding:100px 0;
+  box-sizing: border-box;
+}
 
 
+.box{
+  position:absolute;
 
+}
 
+.box1{
+  width:500px;
+  height: 650px;
+  background: brown;
+  left:0;
+}
+.box2{
+  width:500px;
+  height: 650px;
+  background:burlywood;
+  right: 0;
+  top:200px;
+}
 
-
-
-
+.box3{
+  width:500px;
+  height: 650px;
+  background: brown;
+  bottom:0;
+}
+.box4{
+  width:500px;
+  height: 650px;
+  background:burlywood;
+  bottom:0;
+  right: 0;
+}
 
 
 
@@ -98,6 +132,19 @@ header{
 
 
 /*Cartier-gallery*/
+
+.cartier-gallery-tit{
+  width:100%;
+  height: 1500px;
+  text-align: center;
+  padding:50px 0;
+  box-sizing: border-box;
+}
+.cartier-gallery-tit p{
+  padding:50px 0;
+  box-sizing: border-box;
+  font-size:5rem;
+}
 
 .cartier-gallery {
   overflow: hidden;

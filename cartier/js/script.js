@@ -26,7 +26,7 @@ gsap.utils.toArray(".textUp").forEach(function (elem) {
     trigger: elem,
     start: "top 70%",
     end: "bottom 20%",
-    markers: true,
+    markers: false,
     onEnter: function () {
       gsap.fromTo(
         elem,
@@ -60,4 +60,18 @@ gsap.utils.toArray(".textUp").forEach(function (elem) {
       gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
     }
   });
+});
+
+
+const tlPj1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cartier-gallery-tit",
+    endTrigger: '.cartier-gallery',
+    start: "top top",
+    end: 'top 35%',
+    markers: false,
+    pin: ".gallery-tit-text",
+    pinSpacing: false,
+    scrub: 1
+  }
 });

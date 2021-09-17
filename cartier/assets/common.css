@@ -77,3 +77,21 @@ span,p,a,h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: center;
 }
+
+
+button{
+    cursor: pointer;
+    padding:10px;
+    margin-top:50px;
+    letter-spacing: 4px;
+    background: none;
+    border:0;
+    border-bottom:1px solid #000;
+    font-size:12px;
+    transition:0.5s;
+}
+
+button:hover{
+    background: #000;
+    color:#fff;
+}
