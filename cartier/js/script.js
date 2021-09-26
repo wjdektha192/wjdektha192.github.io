@@ -26,7 +26,7 @@ gsap.utils.toArray(".textUp").forEach(function (elem) {
     trigger: elem,
     start: "top 70%",
     end: "bottom 20%",
-    markers: false,
+    markers: true,
     onEnter: function () {
       gsap.fromTo(
         elem,
@@ -69,7 +69,7 @@ const tlPj1 = gsap.timeline({
     endTrigger: '.cartier-gallery',
     start: "top top",
     end: 'top 35%',
-    markers: false,
+    markers: true,
     pin: ".gallery-tit-text",
     pinSpacing: false,
     scrub: 1

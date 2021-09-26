@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 
 *{
@@ -30,9 +28,10 @@ li {
     padding-right: 1rem;
 }
 
-span,p,a,h1,h2,h3,h4,h5,h6{
-    
+p, span, a, ul li, h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
 }
+
 
 
 
@@ -59,19 +58,6 @@ span,p,a,h1,h2,h3,h4,h5,h6{
 }
 
 
-.numbering{
-    margin-bottom:20px;
-    font-size:1.2rem;
-}
-.numbering span{
-    width:1px;
-    height: 60px;
-    background:#000;
-    display: inline-block;
-    margin-left:5px;
-}
-
-
 .flex{
     display: flex;
     align-items: center;
@@ -89,9 +75,27 @@ button{
     border-bottom:1px solid #000;
     font-size:12px;
     transition:0.5s;
+    font-family: 'Merriweather', serif;
 }
 
 button:hover{
     background: #000;
     color:#fff;
+}
+
+
+
+
+
+/* Text */
+
+.textUp{
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+
+.category-txt{
+    font-size:1rem;
+    line-height: 1.8rem;
 }

@@ -1,141 +1,190 @@
-/*header*/
-header{
-  width:100%; 
-  height: auto; 
-  position:fixed; 
-  z-index: 99; 
-  background:cornflowerblue; 
-  padding:25px 0; 
-  box-sizing: border-box;
-}
-
-
-
-
-
 /*Cartier-main*/
 
 #cartier-main{
-  background: url('img/main_bg.jpg') center center no-repeat;
-  background-size: cover;
+  width:100%;
+  height: auto;
 }
 
-.textUp{
-  opacity: 0;
-  visibility: hidden;
+#cartier-main .contents{
+  height: auto;
 }
 
-.textUp p{
-  font-family: 'Merriweather', serif;
-}
-.cartier-main-text{
-  position:absolute;
-  bottom:200px;
-  left:100px;
-  letter-spacing:-0.01rem
+#cartier-main .cartier-main-text{
+  letter-spacing:-0.05rem;
+  margin: 100px 0;
+  padding:50px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+  display: inline-block;
 }
 
-.text-tit{
-  font-size:3rem;
-  font-weight: 400;
+#cartier-main .text-tit{
+  font-size:1.5rem;
+  font-weight: bold;
+}
+
+#cartier-main img{
+  display: block;
+}
+
+
+/*Cartier New*/
+
+#cartier-new{
+  padding:100px 0 200px 0;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  background: url('img/section02/sec_bg.png') no-repeat center bottom;
+}
+
+#cartier-new .contents{
+  position: relative;
+}
+
+#cartier-new .cartier-new-text{
+  padding:100px 0;
+  display: inline-block;
+}
+
+#cartier-new .text-tit{
+  font-size:2.5rem;
+  padding:50px 0;
+  box-sizing: border-box;
+}
+
+#cartier-new .cartier-new-img{
+  position:relative;
+  height: 3300px;
+  padding:100px 0;
+  box-sizing: border-box;
+}
+
+#cartier-new .text-ex{
+  font-size:1rem;
+  line-height: 1.8rem;
   font-style: italic;
 }
 
-.text-ex{
-  font-size:1rem;
-  line-height: 2rem;
-}
-
-
-/*Cartier-video*/
-.cartier-video{
-  position:relative;
-}
-
-.cartier-video span{
-  display: inline-block;
-  width:100%;
-  height: 1px;
-  background: #000;
-  position:absolute;
-  top:50vh;
-}
-
-.cartier-video video{
-  z-index: 2;
-}
-
-
-
-/*Cartier Product*/
-
-.cartier-product{
-  padding:50px 0;
-  box-sizing: border-box;
- 
-}
-
-
-.cartier-product-text{
-  text-align: center;
-  padding:100px 0;
-}
-
-
-.cartier-product-img{
-  position:relative;
-  height: 1800px;
-  padding:100px 0;
-  box-sizing: border-box;
-}
-
-
 .box{
   position:absolute;
-
 }
 
-.box1{
-  width:500px;
-  height: 650px;
-  background: brown;
-  left:0;
-}
 .box2{
-  width:500px;
-  height: 650px;
-  background:burlywood;
   right: 0;
   top:200px;
 }
 
+.box2 .text-ex{
+  text-align: right;
+  margin-top:50px;
+}
+
 .box3{
-  width:500px;
-  height: 650px;
-  background: brown;
+  top:1300px;
+  z-index: 3;
+}
+
+.box3 .text-ex{
+  margin-top:30px;
+  text-align: center;
+}
+
+.box4{
   bottom:0;
 }
-.box4{
-  width:500px;
-  height: 650px;
-  background:burlywood;
-  bottom:0;
+
+.box5{
+  bottom:50px;
   right: 0;
 }
 
+.box5 p{
+  margin-top:50px;
+  font-size:1.2rem;
+  display: inline-block;
+}
+
+.box-text{
+  float:right;
+}
+
+
+
+
+/*Cartier Heritage*/
+
+#cartier-heritage{
+  width:100%;
+  padding:100px 0;
+  box-sizing: border-box;
+  background: url('img/section03/sec_img01.jpg') no-repeat;
+  background-size:cover;
+}
+
+#cartier-heritage .text-tit{
+  font-size:2.5rem;
+}
+
+#cartier-heritage .cartier-heritage-text{
+  position: absolute;
+  bottom:0;
+}
+
+
+/*Cartier-Collection*/
+
+#cartier-collection{
+  padding-top:100px;
+  box-sizing: border-box;
+}
+
+#cartier-collection .collection-text{
+  padding:100px 0 50px 0;
+}
+
+#cartier-collection .collection-text p:first-child{
+  float: left;
+  line-height: 2rem;
+  margin-top: 25px;
+}
+#cartier-collection .collection-text p:last-child{
+  float: right;
+  font-size:5rem;
+}
+
+#cartier-collection .collection-text::after{
+  display: block;
+  clear: both;
+  content: ' ';
+}
 
 
 
 
 
 
+
+
+
+/*Cartier Video*/
+
+#cartier-video{
+  background: url('img/section04/sec_img01.jpg') no-repeat center center;
+  padding:450px 0;
+}
+
+#cartier-video .contents{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /*Cartier-gallery*/
 
 .cartier-gallery-tit{
   width:100%;
-  height: 1500px;
+  height: 800px;
   text-align: center;
   padding:50px 0;
   box-sizing: border-box;
@@ -143,7 +192,8 @@ header{
 .cartier-gallery-tit p{
   padding:50px 0;
   box-sizing: border-box;
-  font-size:5rem;
+  font-size:4rem;
+  font-style:italic;
 }
 
 .cartier-gallery {
@@ -158,28 +208,73 @@ header{
   padding-bottom: 1rem;
 }
 
-.gallery-text p {
-  font-size: 10rem;
-  line-height: 1;
-  font-weight: 800;
-  padding:30px 0;
-  font-family: 'Montserrat', sans-serif;
+/*Celebrity*/
+
+#cartier-celebrity{
+  position:relative;
+  padding:100px 0;
 }
 
-.gallery-text .text > p{
-  -webkit-text-stroke:3px #000;
-  -o-text-stroke:3px #000;
-  -ms-text-stroke:3px #000;
-  color:transparent;
-  font-style: italic;
+#cartier-celebrity .text-tit{
+  font-size:2.5rem;
+  padding:50px 0;
+  box-sizing: border-box;
+}
+
+#cartier-celebrity .celebrity-img{
+  padding:100px 0;
+  box-sizing: border-box;
+}
+
+#cartier-celebrity .celeb{
+  position:absolute;
+  width: 700px;
+}
+
+#cartier-celebrity .celebrity-pictorial{
+  position:relative;
+  width:100%;
+}
+
+#cartier-celebrity .pictorial01{
+  height: 3000px;
+  background: burlywood;
+}
+
+.celeb02{
+  left:720px;
+  top:100px;
+}
+.celeb03{
+  top:878px;
+}
+.celeb04{
+  left:720px;
+  top:977px;
+}
+
+#cartier-celebrity .pictorial-text{
+  position:absolute;
+  bottom:0;
+}
+#cartier-celebrity .pictorial-text-name{
+  font-size:2.5rem;
+  font-style:italic;
+  color:#333;
+}
+
+#cartier-celebrity .celeb-product img{
+  width:150px;
 }
 
 
-/*Cartier Name*/
-.cartier-name p{
-  font-family: 'Italianno', cursive;
-  font-size: 8rem;
-}
+
+
+
+
+
+
+
 
 
 
