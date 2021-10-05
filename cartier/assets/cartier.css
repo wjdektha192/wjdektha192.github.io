@@ -73,10 +73,10 @@
 .box2{
   right: 0;
   top:200px;
+  text-align: right;
 }
 
 .box2 .text-ex{
-  text-align: right;
   margin-top:50px;
 }
 
@@ -126,13 +126,13 @@
 }
 
 #cartier-collection .collection-text p:first-child{
+  float: right;
+  font-size:5rem;
+}
+#cartier-collection .collection-text p:last-child{
   float: left;
   line-height: 2rem;
   margin-top: 25px;
-}
-#cartier-collection .collection-text p:last-child{
-  float: right;
-  font-size:5rem;
 }
 
 #cartier-collection .collection-text::after{
@@ -203,9 +203,11 @@
   margin-bottom:200px;
 }
 
-#cartier-slide .swiper-slide {
-  height: 800px;
-  background:tan;
+/* #cartier-slide .swiper-slide {
+  height: auto;
+} */
+#cartier-slide .swiper-slide img {
+  width:100%;
 }
 #cartier-slide .swiper-pagination-progressbar {
   bottom:0;

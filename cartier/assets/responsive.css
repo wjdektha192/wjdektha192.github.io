@@ -1,0 +1,419 @@
+@media all and (max-width:1439px){
+
+    /**************Common****************/
+    .contents{
+        width:90%;
+    }
+
+    /**************Contents****************/ 
+
+    /*Cartier-new*/
+
+    #cartier-new .cartier-new-img{
+        height: 2850px;
+    }
+    .box1 img{
+        width:600px;
+    }
+    .box2 img{
+        width:450px;
+    }
+    .box3{
+        top:1150px;
+    }
+    .box3 img{
+        width:100%;
+    }
+    .box4 img, .box5 img{
+        width:550px;
+    }
+
+    /*cartier-collection*/
+
+    #cartier-collection{
+        height: auto;
+    }
+    #cartier-collection .collection-text p:last-child{
+        margin-top:0;
+    }
+    #cartier-collection .collection-text p:first-child{
+        font-size:4rem;
+    }
+
+    /*cartier-video*/
+
+    #cartier-video{
+        padding:300px 0;
+    }
+
+    /*cartier-celeb*/
+
+    #cartier-celebrity .pictorial01 {
+        height: 1800px;
+    }
+    #cartier-celebrity .pictorial01 .celeb{
+        width:48%;
+    }
+    .celeb03 {
+        top: 730px;
+    }
+    .celeb04 {
+        top: 830px;
+    }
+
+    #cartier-celebrity .pictorial02 {
+        height: 1950px;
+    }
+
+    .celeb05, .celeb06{
+        width:48%;
+    }
+
+    .celeb05{
+        top:850px;
+    }
+    .celeb06{
+        top:950px;
+    }
+    .celeb07{
+        width:100%;
+    }
+
+    #cartier-celebrity .pictorial03{
+        height: 1000px;
+    }
+
+    .celeb09{
+        left:392px;
+        top:200px;
+    }
+
+    #cartier-celebrity .pictorial04{
+        height: 1850px;
+    }
+    #cartier-celebrity .pictorial04 .celeb{
+        width:48%;
+    } 
+    .celeb12 {
+        top: 350px;
+    }
+    .celeb13 {
+        top: 800px;
+    }
+}
+
+@media all and (max-width:1280px){
+
+ /**************Contents****************/ 
+
+     /*Cartier-new*/
+
+    #cartier-new .cartier-new-img{
+        height: 2450px;
+    }
+    .box{
+        width:50%;
+    }
+    .box img{
+        width:100%;
+    }
+    .box2 img{
+        width:90%;
+    }
+    .box3{
+        width:100%;
+        top: 1050px;
+    }
+    .box3 img{
+        width:100%;
+    }
+    .box4 img{
+        width:90%;
+    }
+
+    /*cartier-collection*/
+    #cartier-collection .collection-text p:first-child {
+        font-size:2.5rem;
+    }
+    #cartier-collection .collection-text p:last-child{
+        font-size:1rem;
+        line-height: 1.5rem;
+    }
+
+     /*cartier-celeb*/
+
+     #cartier-celebrity .pictorial01 {
+        height: 1500px;
+    }
+    .celeb03 {
+        top: 580px;
+    }
+    .celeb04 {
+        top: 680px;
+    }
+
+    #cartier-celebrity .pictorial02 {
+        height: 1650px;
+    }
+    .celeb05, .celeb06{
+        width:48%;
+    }
+    .celeb05{
+        top:700px;
+    }
+    .celeb06{
+        top:800px;
+    }
+
+    #cartier-celebrity .pictorial03{
+        height: 900px;
+    }
+    #cartier-celebrity .pictorial03 .celeb{
+        width:32%;
+    }
+    .celeb09{
+        left:314px;
+        top:200px;
+    }
+
+    #cartier-celebrity .pictorial04{
+        height: 1500px;
+    }
+    .celeb12 {
+        top: 350px;
+    }
+    .celeb13 {
+        top: 640px;
+    }
+
+}
+
+@media all and (max-width:1024px){
+
+ /**************Contents****************/ 
+
+    #cartier-new .cartier-new-img{
+        height: 2050px;
+    }
+     /*Cartier-new*/
+    .box3 {
+        top: 900px;
+    }
+
+    /*cartier-collection*/
+    #cartier-collection .collection-text p:first-child,#cartier-collection .collection-text p:last-child {
+        float: inherit;
+    }
+    #cartier-collection .collection-text p:last-child{
+        margin-top:30px;
+    }
+
+    /*cartier-heritage*/
+    #cartier-heritage{
+        background-position:45%;
+    }
+
+    /*cartier-celeb*/
+
+    #cartier-celebrity .pictorial-product p{
+        font-size:0.8rem;
+    }
+    #cartier-celebrity .pictorial-text-name{
+        font-size:1.3rem !important;
+    }
+    #cartier-celebrity .celeb-text{
+        line-height: 1.5rem;
+    }
+
+    #cartier-celebrity .celeb-product img{
+        width:100px;
+    }
+
+    #cartier-celebrity .pictorial01 {
+        height: 1150px;
+    }
+    .celeb03 {
+        top: 440px;
+    }
+    .celeb04 {
+        top: 540px;
+    }
+
+    #cartier-celebrity .pictorial02 {
+        height: 1200px;
+    }
+    .celeb05, .celeb06{
+        width:48%;
+    }
+    .celeb05{
+        top:500px;
+    }
+    .celeb06{
+        top:600px;
+    }
+
+    #cartier-celebrity .pictorial03{
+        height: 600px;
+    }
+    .celeb09{
+        left: 236px;
+        top: 100px;
+    }
+    .celeb10{
+        top:50px;
+    }
+
+    #cartier-celebrity .pictorial04{
+        height: 1150px;
+    }
+    .celeb12 {
+        top: 250px;
+    }
+    .celeb13 {
+        top: 480px;
+    }
+
+}
+
+@media all and (max-width:768px){
+
+/**************Contents****************/ 
+
+    /*Cartier-new*/
+    .box {
+    width:100%;
+    position:unset;
+    }
+
+    .box img{
+        width:100%;
+    }
+
+    .box2{
+        right: 0;
+        top:0;
+        text-align: right;
+    }
+
+    .box2 .text-ex{
+    margin-top:30px;
+    }
+
+    .box3{
+    top:0;
+    margin:40px 0;
+    }
+
+    .box5{
+        margin-top:40px;
+    }
+
+
+    /*Cartier-collection*/
+    #cartier-collection .collection-text {
+    padding: 50px 0;
+    }
+
+    /*Cartier-slide*/
+    #cartier-slide{
+        margin-bottom:50px;
+    }
+
+    /*cartier-video*/
+    #cartier-video{
+        padding: 100px 0;
+        margin: 100px 0;
+    }
+    #cartier-video video{
+        width:90%;
+    }
+
+    /*cartier-gallery*/
+    .cartier-gallery-tit{
+        height: 800px;
+    }
+    .cartier-gallery-tit p{
+        font-size:1.2rem;
+        padding-bottom: 20px;
+    }
+    .cartier-gallery-tit .logo{
+        width:110px;
+    }
+
+    /*cartier-celebrity*/
+    #cartier-celebrity .celeb, #cartier-celebrity .pictorial-text{
+        position:unset;
+    }
+    #cartier-celebrity .pictorial01,#cartier-celebrity .pictorial02,
+    #cartier-celebrity .pictorial03,#cartier-celebrity .pictorial04 {
+        height: auto;
+        margin-bottom:40px;
+    }
+
+    .celebrity-pictorial::after{
+        display:block;
+        clear: both;
+        content:' ';
+    }
+    #cartier-celebrity .pictorial01 .celeb{
+        width:100%;
+        margin-bottom:40px;
+    }
+    #cartier-celebrity .pictorial02 .celeb{
+        margin-bottom:40px;
+    }
+    .celeb05, .celeb06{
+        width:100%;
+    }
+    #cartier-celebrity .pictorial03 .celeb, #cartier-celebrity .pictorial04 .celeb{
+        width:100%;
+        margin-bottom:40px;
+    }
+    #cartier-celebrity .celeb-product{
+        padding:30px 0 0 25px;
+    }
+
+    /*cartier-text*/
+    #cartier-text{
+        padding:20px;
+        box-sizing: border-box;
+        line-height: 30px;
+        height: 50vh!important;
+    }
+
+    #cartier-text img{
+        width:90%;
+        margin-bottom:30px;
+    }
+
+
+}
+
+@media all and (max-width:480px){
+
+/**************Contents****************/ 
+
+
+    #cartier-new{
+        padding:50px 0;
+    }
+
+    #cartier-new .cartier-new-img{
+        height: auto;
+        padding:0;
+    }
+
+    #cartier-collection .collection-text p:first-child{
+        font-size:2rem;
+    }
+    #cartier-heritage .text-tit{
+        font-size:1.5rem;
+    }
+    #cartier-info input[type=email]{
+        width:90%;
+    }
+    #cartier-info .text-tit{
+        font-size:1.2rem;
+    }
+}
+
