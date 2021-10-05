@@ -1,5 +1,6 @@
 @media all and (max-width:1439px){
 
+    body{background: darkblue;}
     /**************Common****************/
     .contents{
         width:90%;
