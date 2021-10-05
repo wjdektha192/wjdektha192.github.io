@@ -84,8 +84,9 @@
     }
 
     .celeb09{
-        left:392px;
-        top:200px;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
     }
 
     #cartier-celebrity .pictorial04{
@@ -170,10 +171,6 @@
     #cartier-celebrity .pictorial03 .celeb{
         width:32%;
     }
-    .celeb09{
-        left:314px;
-        top:200px;
-    }
 
     #cartier-celebrity .pictorial04{
         height: 1500px;
@@ -244,10 +241,12 @@
 }
 
 @media all and (max-width:1080px){
-
+    body{background:turquoise;}
 }
 
 @media all and (max-width:1024px){
+
+    body{background:crimson;}
 
  /**************Contents****************/ 
 
@@ -315,7 +314,6 @@
         height: 600px;
     }
     .celeb09{
-        left: 236px;
         top: 100px;
     }
     .celeb10{
@@ -332,6 +330,10 @@
         top: 480px;
     }
 
+}
+
+@media all and (max-width:860px){
+    body{background:tan;}
 }
 
 @media all and (max-width:768px){
