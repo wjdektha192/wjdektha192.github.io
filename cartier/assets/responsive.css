@@ -188,6 +188,33 @@
 
 }
 
+@media all and (max-width:1140px){
+
+    /**************Contents****************/ 
+
+     /*Cartier-new*/
+     #cartier-new .cartier-new-img{
+        height: 2700px;
+    }
+    .box3{
+        top: 1150px;
+    }
+
+    #cartier-celebrity .pictorial01{
+        height: 1600px;
+    }
+    .celeb03{
+        top:680px;
+    }
+    .celeb04{
+        top:780px;
+    }
+}
+
+@media all and (max-width:1080px){
+
+}
+
 @media all and (max-width:1024px){
 
  /**************Contents****************/ 
