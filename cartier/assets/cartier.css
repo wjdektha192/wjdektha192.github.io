@@ -25,6 +25,7 @@
 
 #cartier-main img{
   display: block;
+  width:100%;
 }
 
 
@@ -47,7 +48,7 @@
 }
 
 #cartier-new .text-tit{
-  font-size:2.5rem;
+  font-size:1.8rem;
   padding:50px 0;
   box-sizing: border-box;
 }
@@ -109,33 +110,15 @@
 }
 
 
-
-
-/*Cartier Heritage*/
-
-#cartier-heritage{
-  width:100%;
-  padding:100px 0;
-  box-sizing: border-box;
-  background: url('img/section03/sec_img01.jpg') no-repeat;
-  background-size:cover;
-}
-
-#cartier-heritage .text-tit{
-  font-size:2.5rem;
-}
-
-#cartier-heritage .cartier-heritage-text{
-  position: absolute;
-  bottom:0;
-}
-
-
 /*Cartier-Collection*/
 
 #cartier-collection{
   padding-top:100px;
   box-sizing: border-box;
+}
+
+#cartier-collection img{
+ width:100%;
 }
 
 #cartier-collection .collection-text{
@@ -159,13 +142,6 @@
 }
 
 
-
-
-
-
-
-
-
 /*Cartier Video*/
 
 #cartier-video{
@@ -180,33 +156,111 @@
 }
 
 
+
+/*Cartier Heritage*/
+
+#cartier-heritage{
+  width:100%;
+  padding:100px 0;
+  box-sizing: border-box;
+  background: url('img/section03/sec_img01.jpg') no-repeat;
+  background-size:cover;
+}
+
+#cartier-heritage .text-tit{
+  font-size:2.5rem;
+}
+
+#cartier-heritage .cartier-heritage-text{
+  position: absolute;
+  bottom:0;
+}
+
+#cartier-heritage button{
+  cursor: pointer;
+  padding:10px;
+  margin-top:50px;
+  letter-spacing: 4px;
+  background: none;
+  border:0;
+  border-bottom:1px solid #000;
+  font-size:12px;
+  transition:0.5s;
+  font-family: 'Merriweather', serif;
+}
+
+#cartier-heritage button:hover{
+  background: #000;
+  color:#fff;
+}
+
+
+/*Cartier-Slide*/
+
+#cartier-slide{
+  padding-top:50px;
+  box-sizing: border-box;
+  margin-bottom:200px;
+}
+
+#cartier-slide .swiper-slide {
+  height: 800px;
+  background:tan;
+}
+#cartier-slide .swiper-pagination-progressbar {
+  bottom:0;
+  top:inherit;
+}
+#cartier-slide .swiper-pagination-progressbar-fill{
+  --swiper-theme-color: #000000;
+}
+
+
 /*Cartier-gallery*/
 
 .cartier-gallery-tit{
   width:100%;
-  height: 800px;
+  height: 1200px;
   text-align: center;
   padding:50px 0;
   box-sizing: border-box;
 }
 .cartier-gallery-tit p{
-  padding:50px 0;
+  padding-bottom:30px;
   box-sizing: border-box;
-  font-size:4rem;
+  font-size:1.7rem;
   font-style:italic;
+}
+
+.cartier-gallery-tit .logo{
+  width:150px;
 }
 
 .cartier-gallery {
   overflow: hidden;
 }
 
+.cartier-gallery img {
+  overflow: hidden;
+  width:100%;
+  height: auto;
+}
+
 .wrapper {
   display: flex;
+  padding-left: 1rem;
+}
+
+.wrapper li{
+  flex-shrink: 0;
+  width: clamp(500px, 60vw, 800px);
+  padding-right: 1rem;
 }
 
 .gallery-contents:not(.last) {
   padding-bottom: 1rem;
 }
+
 
 /*Celebrity*/
 
@@ -216,73 +270,230 @@
 }
 
 #cartier-celebrity .text-tit{
-  font-size:2.5rem;
+  font-size:1.8rem;
   padding:50px 0;
   box-sizing: border-box;
 }
 
 #cartier-celebrity .celebrity-img{
-  padding:100px 0;
+  padding-top:100px;
   box-sizing: border-box;
 }
 
 #cartier-celebrity .celeb{
   position:absolute;
-  width: 700px;
 }
 
 #cartier-celebrity .celebrity-pictorial{
   position:relative;
   width:100%;
+  margin-bottom:200px;
 }
-
-#cartier-celebrity .pictorial01{
-  height: 3000px;
-  background: burlywood;
-}
-
-.celeb02{
-  left:720px;
-  top:100px;
-}
-.celeb03{
-  top:878px;
-}
-.celeb04{
-  left:720px;
-  top:977px;
+#cartier-celebrity .celebrity-pictorial:last-child{
+  margin-bottom:100px;
 }
 
 #cartier-celebrity .pictorial-text{
   position:absolute;
   bottom:0;
 }
+
+#cartier-celebrity .pictorial-product{
+  float:left;
+}
+
 #cartier-celebrity .pictorial-text-name{
-  font-size:2.5rem;
-  font-style:italic;
-  color:#333;
+  font-size:1.5rem;
+  
 }
 
 #cartier-celebrity .celeb-product img{
-  width:150px;
+  width:130px;
+  margin-right: 20px;
+  border:1px solid #f1f1f1;
+}
+
+#cartier-celebrity .celeb-text{
+  border-left:2px solid #aaa;
+  padding:0 20px;
+  line-height: 2rem;
+  color:#999;
+}
+
+#cartier-celebrity .pictorial01{
+  height: 2150px;
+}
+
+.celeb02{
+  right: 0;
+  top:100px;
+}
+.celeb03{
+  top:900px;
+}
+.celeb04{
+  right: 0;
+  top:1000px;
+}
+
+#cartier-celebrity .pictorial02{
+  height: 2200px;
+}
+
+.celeb05{
+  top:950px;
+  
+}
+.celeb06{
+  right: 0;
+  top:1050px;
+}
+
+#cartier-celebrity .pictorial03{
+  height: 1050px;
+}
+
+.celeb09{
+  left:495px;
+  top:200px;
+}
+.celeb10{
+  right: 0;
+  top:100px;
+}
+
+#cartier-celebrity .pictorial04{
+  height: 2200px;
+}
+
+.celeb11{
+  right: 0;
+}
+
+.celeb12{
+  top:500px;
+}
+
+.celeb13{
+  right: 0;
+  top:990px;
 }
 
 
+/*Text*/
 
+#cartier-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+}
+#cartier-text p{
+  font-style:italic;
+  color:#999;
+}
 
+/*Information*/
 
+#cartier-info{
+  box-sizing: border-box;
+  text-align: center;
+  border-top:1px solid #eee;
+}
 
+#cartier-info::after{
+  display: block;
+  content: ' ';
+  clear: both;
+}
 
+#cartier-info .info-contents{
+  width:100%;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#cartier-info .info-shop{
+  background:url('img/section09/sec_bg.jpg')no-repeat center center;
+}
 
+#cartier-info .text-tit{
+  font-size:1.8rem;
+}
 
+#cartier-info .text-ex{
+  font-size:1rem;
+  padding-top:30px;
+  color:#777;
+}
+
+#cartier-info form{
+  margin-top:30px;
+}
+
+#cartier-info input[type=email]{
+  width:400px;
+  height: 30px;
+  border:0;
+  border-bottom:1px solid #000;
+  padding:0 20px;
+  font-size:1rem;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+#cartier-info input[type=email]::placeholder{
+  color:#999;
+}
+
+#cartier-info input:focus{
+  outline: none;
+  border-bottom:1px solid #ff0000;
+}
 
 
 /*Footer*/
 footer{
   width:100%;
-  height:50vh;
-  background: #222;
+  height:auto;
   padding:50px 0;
   box-sizing: border-box;
+  text-align: center;
+  border-top:1px solid #eee;
+}
+
+footer::after{
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+.footer-contents ul li{
+  font-weight: 300;
+  color:#666;
+  line-height:40px;
+}
+
+.footer-contents-title{
+  font-size:1.2rem;
+  font-weight: 700;
+  color:#555;
+  margin-bottom:20px;
+}
+
+.footer-contents a{
+  color:#555;
+  font-size:1rem;
+}
+
+.footer-follow li{
+  float: left;
+  padding-right: 40px;
+}
+
+.footer-follow li i{
+  font-size:1.5rem;
 }

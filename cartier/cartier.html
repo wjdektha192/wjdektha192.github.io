@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <link rel='stylesheet' href='assets/common.css'>
     <link rel='stylesheet' href='assets/cartier.css'>
     <link rel='stylesheet' href='assets/responsive.css'>
@@ -14,7 +19,6 @@
 </head>
 
 <body>
-
     <!--Main-->
     <div id="cartier-main" class="cartier-main">
         <div class="contents">
@@ -38,11 +42,11 @@
                     New ARRIVALS
                 </p>
             </div>
-            <div class="cartier-new-img  textUp">
-                <div class="box box1">
+            <div class="cartier-new-img">
+                <div class="box box1 textUp">
                     <img src="assets/img/section02/sec_img02.png" alt="section02_img">
                 </div>
-                <div class="box box2">
+                <div class="box box2 textUp">
                     <br>
                     <br>
                     <img src="assets/img/section02/sec_img01.png" alt="section02_img">
@@ -51,15 +55,15 @@
                     <p class="text-ex">The collection’s latest pieces intensify<br> the clash by amplifying the effect
                         of the Maison’s great codes:</p>
                 </div>
-                <div class="box box3">
+                <div class="box box3 textUp">
                     <img src="assets/img/section02/sec_img03.png" alt="section02_img" />
                     <p class="text-ex">beads and ultra-contemporary rose gold studs form a generously proportioned ring,
                         earring, bracelet and necklace.</p>
                 </div>
-                <div class="box box4">
+                <div class="box box4 textUp">
                     <img src="assets/img/section02/sec_img04.png" alt="section02_img" />
                 </div>
-                <div class="box box5">
+                <div class="box box5 textUp">
                     <img src="assets/img/section02/sec_img05.png" alt="section02_img" />
                     <br>
                     <p class="box-shape">&#9830;&#9830;</p>
@@ -105,15 +109,31 @@
                     with onyx and white gold with Tahitian pearls. <br>
                     Two dark shades, two aesthetics, two bold choices.
                 </p>
-                <button
+                <button 
                     onclick="window.open('https://www.cartier.com/en-us/collections/jewelry/collections/clash-de-cartier.viewall.html')">DISCOVER</button>
             </div>
         </div>
     </div>
 
+    <!--Heritage Slide-->
+    <div id="cartier-slide" class="cartier-slide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/slide/01.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/img/slide/02.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/img/slide/03.jpg" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
     <!--Horizontal Gallery-->
     <div class="cartier-gallery-tit">
-        <p class="gallery-tit-text">Enter The World of Cartier</p>
+        <p><i>Too much</i> or not enough? <i>Classic</i> or eccentric?</p>
+        <p class="gallery-tit-text">
+            Enter The World of &nbsp;:
+            <img src="assets/img/section06/logo.png" class="logo" alt="logo" />
+        </p>
     </div>
     <div class="cartier-gallery">
         <section class="gallery-contents">
@@ -155,6 +175,19 @@
                 </li>
             </ul>
         </section>
+        <section class="gallery-contents">
+            <ul class='wrapper'>
+                <li>
+                    <img height='874' src='assets/img/section06/sec_img10.jpg' width='1240'>
+                </li>
+                <li>
+                    <img height='874' src='assets/img/section06/sec_img11.jpg' width='1240'>
+                </li>
+                <li>
+                    <img height='874' src='assets/img/section06/sec_img12.jpg' width='1240'>
+                </li>
+            </ul>
+        </section>
     </div>
 
     <!--Celebrity-->
@@ -162,20 +195,22 @@
         <div class="contents">
             <div class="textUp cartier-celebrity-text">
                 <p class="text-tit">
-                    Celebrity
+                    Cartier in Celebrity
                 </p>
             </div>
             <div class="celebrity-img">
+                <!--songkang-->
                 <div class="celebrity-pictorial pictorial01 textUp">
                     <img src="assets/img/section07/sec_img01.jpg" class="celeb celeb01" alt="section07"/>
                     <img src="assets/img/section07/sec_img02.jpg" class="celeb celeb02" alt="section07"/>
                     <img src="assets/img/section07/sec_img03.jpg" class="celeb celeb03" alt="section07"/>
                     <img src="assets/img/section07/sec_img04.jpg" class="celeb celeb04" alt="section07"/>
                     <div class="pictorial-text">
-                        <p class="pictorial-text-name">Song Kang</p>
-                        <br>
-                        <div class="pictorial-product celeb-product">
-                            
+                        <div class="pictorial-product celeb-text">
+                            <p class="pictorial-text-name">Song Kang</p>
+                            <br>
+                            <p>CLASH DE CARTIER RING MEDIUM MODEL</p>
+                            <p>CLASH DE CARTIER BRACELET MEDIUM MODEL</p>
                         </div>
                         <div class="pictorial-product celeb-product">
                             <img src="assets/img/section07/product_img01.jpg" alt="section07" />
@@ -183,32 +218,106 @@
                         </div>
                     </div>
                 </div>
+                <!--chungha-->
+                <div class="celebrity-pictorial pictorial02 textUp">
+                    <img src="assets/img/section07/sec_img07.jpg" class="celeb celeb07" alt="section07"/>
+                    <img src="assets/img/section07/sec_img05.jpg" class="celeb celeb05" alt="section07"/>
+                    <img src="assets/img/section07/sec_img06.jpg" class="celeb celeb06" alt="section07"/>
+                    <div class="pictorial-text">
+                        <div class="pictorial-product celeb-text">
+                            <p class="pictorial-text-name">Chung Ha</p>
+                            <br>
+                            <p>CLASH[UN]LIMITED ONYX DIAMONDS EARRING</p>
+                            <p>CLASH DE CARTIER BRACELET SMALL MODEL</p>
+                        </div>
+                        <div class="pictorial-product celeb-product">
+                            <img src="assets/img/section07/product_img03.jpg" alt="section07" />
+                            <img src="assets/img/section07/product_img04.jpg" alt="section07" />
+                        </div>
+                    </div>
+                </div>
+                <!--Esom-->
+                <div class="celebrity-pictorial pictorial03 textUp">
+                    <img src="assets/img/section07/sec_img08.jpg" class="celeb celeb08" alt="section07"/>
+                    <img src="assets/img/section07/sec_img09.jpg" class="celeb celeb09" alt="section07"/>
+                    <img src="assets/img/section07/sec_img10.jpg" class="celeb celeb10" alt="section07"/>
+                    <div class="pictorial-text">
+                        <div class="pictorial-product celeb-text">
+                            <p class="pictorial-text-name">Esom</p>
+                            <br>
+                            <p>CLASH DE CARTIER HOOP EARRINGS SMALL MODEL</p>
+                            <p>CLASH DE CARTIER NECKLACE, XL MODEL</p>
+                        </div>
+                        <div class="pictorial-product celeb-product">
+                            <img src="assets/img/section07/product_img05.jpg" alt="section07" />
+                            <img src="assets/img/section07/product_img06.jpg" alt="section07" />
+                        </div>
+                    </div>
+                </div>
+                <!--Ryu Jun-yeol-->
+                <div class="celebrity-pictorial pictorial04 textUp">
+                    <img src="assets/img/section07/sec_img11.jpg" class="celeb celeb11" alt="section07"/>
+                    <img src="assets/img/section07/sec_img12.jpg" class="celeb celeb12" alt="section07"/>
+                    <img src="assets/img/section07/sec_img13.jpg" class="celeb celeb13" alt="section07"/>
+                    <div class="pictorial-text">
+                        <div class="pictorial-product celeb-text">
+                            <p class="pictorial-text-name">Ryu Jun Yeol</p>
+                            <br>
+                            <p>CLASH DE CARTIER TAHITI PEARLS RING, XL MODEL</p>
+                            <p>CLASH DE CARTIER PEARLS RING BRACELET</p>
+                        </div>
+                        <div class="pictorial-product celeb-product">
+                            <img src="assets/img/section07/product_img07.jpg" alt="section07" />
+                            <img src="assets/img/section07/product_img08.jpg" alt="section07" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
-
-
-    <!--Shop-->
-    <div id="cartier-shop" class="section cartier-shop">
-        <div class="contents">
-            Shop
+    <!--Text-->
+    <div id="cartier-text" class="section cartier-text">
+        <div class="textUp">
+            <img src="assets/img/section09/text-name.jpg" alt="section09"/>
+            <p>A collection that shakes up the Maison’s aesthetic heritage.</p>
         </div>
     </div>
+
+    <!--Information-->
+    <div id="cartier-info" class="cartier-info">
+        <div class="info-shop info-contents">
+            <div>
+                <div class="cartier-shop-text">
+                    <p class="text-tit">
+                        CLASH DE CARTIER
+                    </p>
+                    <p class="text-ex">[ Clash de Cartier cultivates contrasts. ]</p>
+                </div>
+                <button class="button">SHOP THE COLLECTION</button>
+            </div>
+        </div>
+        <div class="info-subscript info-contents">
+            <div>
+                <p class="text-tit">SUBSCRIBE TO OUR NEWSLETTER</p>
+                <form>
+                    <input type="email" placeholder="Enter your E-mail" autocomplete="off"/><br>
+                    <button class="button">PROCEED</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!--Footer-->
     <footer>
         <div class="contents">
-
-        </div>
-        </div>
+        <img src="assets/img/section06/logo.png" alt="footerlogo" />
     </footer>
-
 
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>

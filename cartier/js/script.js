@@ -26,7 +26,7 @@ gsap.utils.toArray(".textUp").forEach(function (elem) {
     trigger: elem,
     start: "top 70%",
     end: "bottom 20%",
-    markers: true,
+    markers: false,
     onEnter: function () {
       gsap.fromTo(
         elem,
@@ -62,16 +62,26 @@ gsap.utils.toArray(".textUp").forEach(function (elem) {
   });
 });
 
-
+//textmove
 const tlPj1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".cartier-gallery-tit",
     endTrigger: '.cartier-gallery',
     start: "top top",
-    end: 'top 35%',
-    markers: true,
+    end: 'top 25%',
     pin: ".gallery-tit-text",
     pinSpacing: false,
     scrub: 1
   }
+});
+
+
+//slide 
+var swiper = new Swiper(".mySwiper", {
+  mousewheel: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  loop:true,
 });

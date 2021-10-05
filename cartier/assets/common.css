@@ -11,29 +11,16 @@ body {
     overflow: hidden;
 }
   
-img {
-    width: 100%;
-    height: auto;
-}
-  
-
-ul {
-    padding-left: 1rem;
-    list-style: none;
-}
-  
-li {
-    flex-shrink: 0;
-    width: clamp(500px, 60vw, 800px);
-    padding-right: 1rem;
-}
 
 p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     font-family: 'Merriweather', serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 
-
+::-moz-selection {background: #000;color: #fff;}
+::selection {background: #000;color: #fff;}
 
 
 .section{
@@ -51,7 +38,7 @@ p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     position:relative
 }
 
-.contetns::after{
+.contents::after{
     display:block;
     clear: both;
     content:'';
@@ -63,28 +50,6 @@ p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     align-items: center;
     justify-content: center;
 }
-
-
-button{
-    cursor: pointer;
-    padding:10px;
-    margin-top:50px;
-    letter-spacing: 4px;
-    background: none;
-    border:0;
-    border-bottom:1px solid #000;
-    font-size:12px;
-    transition:0.5s;
-    font-family: 'Merriweather', serif;
-}
-
-button:hover{
-    background: #000;
-    color:#fff;
-}
-
-
-
 
 
 /* Text */
@@ -99,3 +64,19 @@ button:hover{
     font-size:1rem;
     line-height: 1.8rem;
 }
+
+
+/*Button*/
+
+.button{
+    cursor: pointer;
+    padding:10px;
+    margin-top:30px;
+    letter-spacing: 4px;
+    background: #000;
+    border:0;
+    font-size:12px;
+    font-family: 'Merriweather', serif;
+    color:#fff
+  }
+  
