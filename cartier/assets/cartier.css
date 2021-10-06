@@ -200,12 +200,13 @@
 
 #cartier-slide{
   padding-top:50px;
-  box-sizing: border-box;
-  margin-bottom:200px;
+  margin-bottom:100px;
 }
 
 #cartier-slide .swiper{
   width:85%;
+  background: wheat;
+  padding-top:65px;
 }
 
 #cartier-slide .swiper-slide img {
@@ -213,7 +214,7 @@
 }
 
 #cartier-slide .swiper-button-next {
-  right: 50px;
+  right: 60px;
 }
 
 .swiper-button-next::after{
