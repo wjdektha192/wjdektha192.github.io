@@ -203,25 +203,13 @@
   margin-bottom:100px;
 }
 
-#cartier-slide .swiper{
-  width:85%;
-  background: wheat;
-  padding-top:65px;
-}
-
 #cartier-slide .swiper-slide img {
   width:100%;
 }
 
-#cartier-slide .swiper-button-next {
-  right: 60px;
+.swiper-pagination-bullet{
+  background:#000;
 }
-
-.swiper-button-next::after{
-  font-family:unset;
-  content: none;
-}
-
 
 
 /*Cartier-gallery*/

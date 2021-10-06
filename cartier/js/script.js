@@ -89,8 +89,9 @@ const tlPj1 = gsap.timeline({
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
   breakpoints: {
     320: {
