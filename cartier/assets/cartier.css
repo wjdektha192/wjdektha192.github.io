@@ -204,19 +204,19 @@
   margin-bottom:200px;
 }
 
-/* #cartier-slide .swiper-slide {
-  height: auto;
-} */
 #cartier-slide .swiper-slide img {
   width:100%;
 }
-#cartier-slide .swiper-pagination-progressbar {
-  bottom:0;
-  top:inherit;
+
+#cartier-slide .swiper-button-next {
+  right: -50px;
 }
-#cartier-slide .swiper-pagination-progressbar-fill{
-  --swiper-theme-color: #000000;
+
+.swiper-button-next::after{
+  font-family:unset;
+  content: none;
 }
+
 
 
 /*Cartier-gallery*/

@@ -77,11 +77,29 @@ const tlPj1 = gsap.timeline({
 
 
 //slide 
+// var swiper = new Swiper(".mySwiper", {
+//   mousewheel: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "progressbar",
+//   },
+//   loop:true,
+// });
+
 var swiper = new Swiper(".mySwiper", {
-  mousewheel: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar",
+    clickable: true,
   },
-  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
 });
