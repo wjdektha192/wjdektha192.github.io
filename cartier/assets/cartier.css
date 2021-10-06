@@ -204,12 +204,16 @@
   margin-bottom:200px;
 }
 
+#cartier-slide .swiper{
+  width:85%;
+}
+
 #cartier-slide .swiper-slide img {
   width:100%;
 }
 
 #cartier-slide .swiper-button-next {
-  right: -50px;
+  right: 50px;
 }
 
 .swiper-button-next::after{
