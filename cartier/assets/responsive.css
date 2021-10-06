@@ -301,6 +301,10 @@
         top: 1050px;
     }
 
+    #cartier-collection .collection-text p:last-child{
+        margin-top:25px;
+    }
+
     /*cartier-celeb*/
     #cartier-celebrity .pictorial01 {
         height: 1400px;
@@ -396,7 +400,6 @@
 @media all and (max-width:768px){
 
 /**************Contents****************/ 
-
     /*Cartier-new*/
     .box {
     width:100%;
@@ -430,6 +433,11 @@
     /*Cartier-collection*/
     #cartier-collection .collection-text {
     padding: 50px 0;
+    }
+
+    /*Cartier-heritage*/
+    #cartier-heritage{
+        background-position: 35%;
     }
 
     /*Cartier-slide*/
