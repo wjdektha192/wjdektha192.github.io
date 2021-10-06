@@ -141,6 +141,11 @@
         line-height: 1.5rem;
     }
 
+    /*Cartier-slide*/
+    #cartier-slide{
+        width:80%;
+    }
+
      /*cartier-celeb*/
      #cartier-celebrity .pictorial01 {
         height: 1700px;
