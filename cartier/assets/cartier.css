@@ -451,6 +451,7 @@
   font-size:1rem;
   text-align: center;
   font-family: 'Merriweather', serif;
+  border-radius: 0px;
 }
 #cartier-info input[type=email]::placeholder{
   color:#999;
