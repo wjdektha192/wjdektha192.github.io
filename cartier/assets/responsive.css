@@ -112,7 +112,7 @@
      /*Cartier-new*/
 
     #cartier-new .cartier-new-img{
-        height: 2750px;
+        height: 2950px;
     }
     .box{
         width:50%;
@@ -125,7 +125,7 @@
     }
     .box3{
         width:100%;
-        top: 1150px;
+        top: 1250px;
     }
     .box3 img{
         width:100%;
@@ -145,26 +145,26 @@
 
      /*cartier-celeb*/
      #cartier-celebrity .pictorial01 {
-        height: 1500px;
+        height: 1700px;
     }
     .celeb03 {
-        top: 580px;
+        top: 710px;
     }
     .celeb04 {
-        top: 680px;
+        top: 810px;
     }
 
     #cartier-celebrity .pictorial02 {
-        height: 1650px;
+        height: 1800px;
     }
     .celeb05, .celeb06{
         width:48%;
     }
     .celeb05{
-        top:700px;
+        top:800px;
     }
     .celeb06{
-        top:800px;
+        top:900px;
     }
 
     #cartier-celebrity .pictorial03{
@@ -175,13 +175,13 @@
     }
 
     #cartier-celebrity .pictorial04{
-        height: 1500px;
+        height: 1750px;
     }
     .celeb12 {
         top: 350px;
     }
     .celeb13 {
-        top: 640px;
+        top: 780px;
     }
 
 }

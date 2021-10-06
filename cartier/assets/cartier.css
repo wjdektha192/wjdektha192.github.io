@@ -187,6 +187,7 @@
   font-size:12px;
   transition:0.5s;
   font-family: 'Merriweather', serif;
+  color:#000;
 }
 
 #cartier-heritage button:hover{
@@ -261,6 +262,10 @@
 
 .gallery-contents:not(.last) {
   padding-bottom: 1rem;
+}
+
+.cartier-gallery-tit .linebreak{
+  display: none;
 }
 
 
