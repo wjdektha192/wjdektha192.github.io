@@ -1,84 +1,450 @@
-  
-  section:not(#sectionPin) {
-    min-height: 100vh;
+/*Beoplay-Menu*/
+#beoplay-menu{
+  width:100%;
+  height: 60px;
+  background: #fff;
+  position: fixed;
+  top:-70px;
+  z-index: 999;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  text-align: center;
+}
+
+.header-on{
+  top:0 !important;
+}
+
+#beoplay-menu img{
+  width:200px;
+}
+
+
+
+
+/*Beoplay-Intro*/
+#beoplay-intro{
     width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    padding: 50px 10vw;
-    margin: auto;
-    place-items: center;
-  }
-  
-  img {
-    height: 80vh;
-    width: auto;
-    object-fit: cover;
-  }
-  
-  h1 {
-    font-size: 5rem;
-    line-height: 1;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    position: absolute;
-    top: 10vw;
-    left: 10vw;
-    z-index: 4;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 16vw;
-    }
-  }
-  h1 span {
-    display: block;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    max-width: 400px;
-  }
-  
-  .credit {
-    font-family: Termina, sans-serif;
-  }
-  .credit a {
-    color: var(--text-color);
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  #sectionPin {
     height: 100vh;
+    background: #000;
     overflow: hidden;
-    display: flex;
-    left: 0;
-    background: var(--text-color);
-    color: var(--bg-color);
+    position:relative;
+}
+
+#beoplay-intro video{
+    width:100%;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+#beoplay-intro .scroll-down {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+#beoplay-intro .scroll-down-text {
+  color: #d8d8d8;
+  font-size:0.6rem;
+  font-family: var(--header-font);
+}
+#beoplay-intro .scroll-down-bar {
+  background: #d8d8d8;
+  bottom: 0;
+  display: inline-block;
+  height: 65px;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+#beoplay-intro .scroll-down-bar::before {
+  animation: scrollDown 1.5s infinite;
+  background: #666;
+  content: '';
+  display: inline-block;
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
+
+@-moz-keyframes scrollDown {
+  0% {
+    transform: translate3d(0, -32px, 0);
   }
-  
-  .pin-wrap {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 50px 10vw;
+  50% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
   }
-  .pin-wrap > * {
-    min-width: 60vw;
-    padding: 0 5vw;
+  100% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 65px, 0);
   }
-  
-  p {
-    position: absolute;
-    bottom: 10vw;
-    right: 10vw;
-    width: 200px;
-    line-height: 1.5;
+}
+@-webkit-keyframes scrollDown {
+  0% {
+    transform: translate3d(0, -32px, 0);
   }
+  50% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 65px, 0);
+  }
+}
+@-o-keyframes scrollDown {
+  0% {
+    transform: translate3d(0, -32px, 0);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 65px, 0);
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: translate3d(0, -32px, 0);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 65px, 0);
+  }
+}
+
+
+
+
+
+
+
+
+/*Beoplay-Sound*/
+#beoplay-sound {
+    position:relative;
+  }
+
+#beoplay-sound p{
+  font-family: 'Lexend Deca', sans-serif;
+  position:absolute;
+}
+
+#beoplay-sound p:nth-child(1){
+  left:30px;
+  transform: rotate(-90deg);
+}
+
+#beoplay-sound p:nth-child(2){
+  right: 50px;
+  transform: rotate(90deg);
+}
+
+.beoplay-sound-contents{
+  position:relative;
+  width:1500px;
+  height: 700px;
+}
+
+.sound-slide{
+  width:750px;
+  height: 700px;
+  position:absolute;
+}
+
+.sound-slide01{
+  right: 0;
+}
+
+.sound-slide02{
+  left: 0;
+}
+
+.sound-slide02 .swiper-slide{
+  padding:50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.sound-slide02 .swiper-slide{
+  background: #333;
+}
+
+.sound-slide03{
+  width:250px;
+  height: 250px;
+  position:absolute;
+  top:200px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.sound-slide03 img{
+  width:100%;
+}
+
+
+
+
+/*Beoplay-Design*/
+#beoplay-design{
+  text-align: center;
+}
+
+
+
+
+/*Beoplay-Technology*/
+#beoplay-technology {
+position:relative;
+height: 100vh;
+overflow: hidden;
+display: flex;
+left: 0;
+}
+
+.pin-wrap {
+height: 100vh;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 50px 10vw;
+}
+.pin-wrap > * {
+min-width: 60vw;
+padding: 0 5vw;
+}
+
+
+
+
+
+
+
+/*Beoplay-Silence*/
+#beoplay-silence{
+  width:100%;
+  height: 1500px;
+  overflow: hidden;
+  position:relative;
+}
+
+
+
+
+
+
+
+/*Beoplay-Product*/
+#beoplay-product .container{
+  width:100%;
+  height: 100%;
+}
+
+.beoplay-product{
+  background: var(--sand-bg);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+.left-side .main-wrapper{
+  margin:50px 0;
+}
+
+.mySwiper {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main {
+  padding: 42px 0 30px;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main-header {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  transition-delay: 0.2s;
+  font-family: var(--header-font);
+  padding-bottom:20px;
+}
+.main-title {
+  font-family: var(--tit-font);
+  font-size: 100px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1em;
+  transition-delay: 0.3s;
+}
+.main-subtitle {
+  font-family: var(--tit-font);
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 14px;
+  margin-bottom: 60px;
+  transition-delay: 0.4s;
+}
+.main-content__title {
+  font-size: 26px;
+  font-family: var(--italic-font);
+  font-style: italic;
+  margin-bottom: 14px;
+  transition-delay: 0.2s;
+}
+.main-content__subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  transition-delay: 0.3s;
+}
+.main-content .more-menu {
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition-delay: 0.4s;
+}
+
+.center {
+  display: flex;
+  margin:0 auto;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.center .bottle-bg {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 1000px;
+}
+.center .bottle-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+  transition: 0.4s;
+}
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.swiper-slide .main-wrapper > *,
+.swiper-slide .main-content > * {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.swiper-slide-active .main-wrapper > *,
+.swiper-slide-active .main-content > * {
+  transform: none;
+  opacity: 1;
+}
+
+.swiper-slide .bottle-bg {
+  transition-duration: 0.6s;
+  opacity: 0;
+  object-position: 60%;
+}
+
+.swiper-slide-active .bottle-bg {
+  opacity: 1;
+  transform: none;
+  object-position: 50%;
+}
+
+.swiper-slide .bottle-img {
+  transition-duration: 0.8s;
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+.swiper-slide-active .bottle-img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-sld="0"] .beoplay-product{
+  background-color:var(--sand-bg);
+}
+[data-sld="1"] .beoplay-product{
+  background-color:var(--black-bg);
+}
+[data-sld="1"] .main-header, [data-sld="1"] .main-title,
+[data-sld="1"] .main-subtitle,[data-sld="1"] .main-content__title,
+[data-sld="1"] .main-content__subtitle,[data-sld="1"] .more-menu{
+  color:var(--black-color);
+}
+
+
+
+
+
+
+
+/*Beoplay-Service*/
+#beoplay-service{
+  background: #f5f5f5;
+  text-align: center;
+  padding:30px;
+  box-sizing: border-box;
+  position:relative;
+}
+
+#beoplay-service .beoplay-service-contents{
+  width:33.3%;
+  height: 600px;
+  padding:30px;
+  box-sizing: border-box;
+  background: yellow;
+  z-index: 3;
+}
+
+#beoplay-service .background-text{
+  position:absolute;
+  font-size:10rem;
+  top:200px;
+}
+
+
+
+/*Beoplay-Footer*/
+footer{
+  width:100%;
+  height: 50vh;
+  background: #f1f1f1;
+}

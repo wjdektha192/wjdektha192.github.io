@@ -6,70 +6,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+
     <link rel='stylesheet' href='assets/css/common.css'>
     <link rel='stylesheet' href='assets/css/beoplay.css'>
+    <link rel='stylesheet' href='assets/css/responsive.css'>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-    integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'><link rel="stylesheet" href="./style.css">
-
-    <title>BANG&OLUFSEN</title>
+    <title>BANG & OLUFSEN</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id="beoplay-contents" class="beoplay-contents">
+
+        <!--header Beoplay Menu-->
+        <div id="beoplay-menu" class="beoplay-menu">
+            <img src="assets/img/header/logo.png" alt="logo" />
+        </div>
+
+        <!--section00Beoplay Intro-->
+        <div id="beoplay-intro" class="beoplay-intro">
+            <div class="scroll-down">
+                <div class="scroll-down-text">SCROLL DOWN</div>
+                <div class="scroll-down-bar"></div>
+            </div>
+            <video src="assets/img/section00/intro.mp4" muted autoplay loop></video>
+        </div>
+
+        <!--section01 Beoplay Sound-->
+        <div id="beoplay-sound" class="section beoplay-sound flex">
+            <p>BANG&OLUFSEN</p>
+            <p>beoplay EQ</p>
+
+            <div class="beoplay-sound-contents">
+                <div class="swiper sound-slide sound-slide01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/section01/sec_img01.jpg" alt="section-sound" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/section01/sec_img02.jpg" alt="section-sound" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper sound-slide sound-slide02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            0111
+                        </div>
+                        <div class="swiper-slide">02</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper sound-slide03">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/section01/product01.png" alt="sound-product" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/section01/product02.png" alt="sound-product" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--section02 Beoplay-Design-->
+        <div id="beoplay-design" class="beoplay-design">
+            <div class="contents">
+                <div class="beoplay-title">
+                    <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                    <p class="beoplay-title-category">DESIGN</p>
+                </div>
+            </div>
+        </div>
+
+        <!--section03 Beoplay-Technology-->
+        <div id="beoplay-technology" class="beoplay-technology">
+            <div class="pin-wrap">
+                <div class="beoplay-title">
+                    <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                    <p class="beoplay-title-category">TECHNOLOGY</p>
+                </div>
+                <img src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+                    alt="">
+                <img src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+                    alt="">
+                <img src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+                    alt="">
+            </div>
+        </div>
+
+        <!--section04 Beoplay-Silence-->
+        <div id="beoplay-silence" class="beoplay-silence">
+            <div class="beoplay-title">
+                <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                <p class="beoplay-title-category">The Sound of silence</p>
+            </div>
+        </div>
+
+        <!--section05 Beoplay-Product-->
+        <div id="beoplay-product" class="section beoplay-product">
+            <div class="contents">
+                <div class="container">
+                    <div class="mySwiper">
+
+                        <div class="main-wrapper swiper-wrapper">
+                            <div class="main swiper-slide" id="sand">
+                                <div class="left-side">
+                                    <div class="main-wrapper">
+                                        <h3 class="main-header">beoplay EQ</h3>
+                                        <h1 class="main-title">Sand</h1>
+                                        <h2 class="main-subtitle">€ 399</h2>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="main-content__title">In 20 years, there could be more plastic in our
+                                            oceans than fish.</div>
+                                        <div class="main-content__subtitle">절제되어 있으면서도 뚜렷한 샌드 디자인으로, 레이저로 새긴 로고와 알루미늄 세부
+                                            작식이 악센트를 줍니다.</div>
+                                        <div class="more-menu">
+                                            Shop Now
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="right-side__img">
+                                        <img class="bottle-bg"
+                                            src="assets/img/section05/bg01.jpg"
+                                            alt="">
+                                        <img class="bottle-img"
+                                            src="assets/img/section05/product01.png" />
+                                    </div>
+                                </div>
+                            </div>
 
 
 
 
 
-        <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
-          <div>
-            <h1 data-scroll data-scroll-speed="1"><span>Horizontal</span> <span>scroll</span> <span>section</span></h1>
-            <p data-scroll data-scroll-speed="2" data-scroll-delay="0.2">with GSAP ScrollTrigger & Locomotive Scroll</p>
-          </div>
-    
-        </section>
-    
+
+
+                            <div class="main swiper-slide" id="black">
+                                <div class="left-side">
+                                    <div class="main-wrapper">
+                                        <h3 class="main-header">beoplay EQ</h3>
+                                        <h1 class="main-title">Black</h1>
+                                        <h2 class="main-subtitle">€ 399</h2>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="main-content__title">The Earth’s area affected by desertification is
+                                            approx 11 times India’s size.
+                                        </div>
+                                        <div class="main-content__subtitle">유행을 타지 않는 클래식 블래의 우아함을 알루미늄 세부 장식과 레이저로 새긴
+                                            현대적인 로고가 보완합니다.</div>
+                                        <div class="more-menu">
+                                            Shop Now
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="right-side__img">
+                                        <img class="bottle-bg"
+                                            src="assets/img/section05/bg02.jpg"
+                                            alt="">
+                                        <img class="bottle-img"
+                                            src="assets/img/section05/product02.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--section06 Beoplay-Service -->
+        <div id="beoplay-service" class="beoplay-service">
+            <div class="beoplay-title">
+                <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                <p class="beoplay-title-category">SERVICE</p>
+            </div>
+            <div class="contents flex">
+                <div class="beoplay-service-contents">
+                    1
+                </div>
+                <div class="beoplay-service-contents">
+                    2
+                </div>
+                <div class="beoplay-service-contents">
+                    3
+                </div>
+            </div>
+            <p class="background-text">BANG&OLUFSEN</p>
+        </div>
 
+        <!--footer Beoplay-Footer-->
+        <footer>
+            <div class="contents">
+                푸터
+            </div>
+        </footer>
 
-
-
-
-
-        <section id="sectionPin">
-          <div class="pin-wrap">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-            <img src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
-            <img src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
-            <img src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
-    
-          </div>
-        </section>
-
-
-
-
-
-
-        <section data-bgcolor="#e3857a" data-textcolor="#f1dba7"><img src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-          <h2 data-scroll data-scroll-speed="1" class="credit"><a href="https://thisisadvantage.com" target="_blank">Made by Advantage</a></h2>
-        </section>
-      </div>
-
-
-
-
-
+    </div>
 
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script><script  src="./script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
