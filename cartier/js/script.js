@@ -116,4 +116,18 @@ document.addEventListener("DOMContentLoaded", function() {
       onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
     });
   });
-});``
+});
+
+//Product
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  effect: "fade",
+  loop: "infinite",
+});
+
+swiper.on('slideChange', function (sld) {
+  document.body.setAttribute('data-sld', sld.realIndex);
+});
