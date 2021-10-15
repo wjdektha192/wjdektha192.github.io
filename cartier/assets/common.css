@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap');
 
 
 *{
@@ -13,7 +13,7 @@ body {
   
 
 p, span, a, ul li, h1, h2, h3, h4, h5, h6{
-    font-family: 'Merriweather', serif;
+    font-family: 'Shippori Mincho', serif;
     list-style: none;
     text-decoration: none;
 }
@@ -51,24 +51,41 @@ p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     justify-content: center;
 }
 
+:root{
+    --category-color:#b31414;
+    --title-color:#222;
+}
+
+
 
 /* Text */
 
 .textUp{
     opacity: 0;
     visibility: hidden;
-  }
-  
+}
 
-.category-txt{
+.cartier-text-category{
+    color:var(--category-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.cartier-text-title{
+    color:var(--title-color);
+    font-size:3rem;
+    letter-spacing: -0.1rem;
+}
+
+.cartier-text-ex{
+    color:var(--title-color);
     font-size:1rem;
-    line-height: 1.8rem;
 }
 
 
 /*Button*/
 
-.button{
+button{
     cursor: pointer;
     padding:10px;
     margin-top:30px;
@@ -76,7 +93,20 @@ p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     background: #000;
     border:0;
     font-size:12px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Shippori Mincho', serif;
     color:#fff
-  }
-  
+}
+
+.button-over{
+    background: none;
+    color:#000;
+    font-size:0.9rem;
+    border-bottom:1px solid #000;
+    transition: 0.7s;
+}
+.button-over:hover{
+    background: var(--category-color);
+    color:#fff;
+    border-bottom:none;
+    transition: 0.7s;
+}
