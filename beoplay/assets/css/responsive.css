@@ -2,25 +2,155 @@
 
     /**************Common****************/
 
+    .contents{
+        width:90%;
+    }
+
     /**************Contents****************/ 
 
-    
+    /*Video*/
+
+    #beoplay-intro video {
+        width: auto;
+        left: -150px;
+        height: 100vh;
+    }
 
 
+    /*Sound*/
+
+    #beoplay-sound{
+        background-position: bottom right;
+    }
+
+    #beoplay-sound .beoplay-title{
+        left:650px;
+    }
+      
+   
+    #beoplay-sound .sound-slide01{
+        width:600px;
+    }
+
+    #beoplay-sound .sound-slide02{
+        left: 650px;
+    }
+
+    #beoplay-sound .sound-slide03{
+        width:300px;
+        height: 300px;
+        left: 900px;
+    }
 
 
+    /*Design*/
 
+    .design-contents{
+        height: 750px;
+    }
+
+    .design-contents img{
+        width:50%;
+    }
+
+    .design-contents-intro01 .design-text-left{
+        left:650px;
+    }
+
+    .design-contents-intro02 .design-text-left{
+        left:0;
+    }
+
+
+    /*silence*/
+
+    #beoplay-silence{
+        background-position: right;
+    }
+
+
+     /*product*/
+
+    .left-side{
+        margin-left:50px;
+    }
+
+    .beoplay-product-contents{
+        width:100%;
+    }
+
+
+    /*service*/
+
+    #beoplay-service .beoplay-service-contents{
+        width:32%;
+        height: auto;
+    }
+
+    #beoplay-service .beoplay-service-contents img{
+        width:100%;
+    }
 }
 
 @media all and (max-width:1280px){
 
  /**************Contents****************/ 
+    /*Sound*/
+
+    #beoplay-sound .beoplay-title{
+        left:550px;
+    }
+
+    #beoplay-sound .sound-slide01{
+        width:500px;
+    }
+
+    #beoplay-sound .sound-slide02{
+        left: 550px;
+    }
+
+    #beoplay-sound .sound-slide03{
+        display: none;
+    }
+
+
+    /*Design*/
+
+    .design-contents {
+        height: 650px;
+    }
+
+    #beoplay-design .design-text-left{
+        width:450px;
+    }
+
+    .design-contents-intro01 .design-text-left{
+        left: 580px;
+    }
+
+
+     /*Product*/
+    .beoplay-product-contents{
+        padding:30px;
+    }
+
+    .left-side {
+        margin-left: 0px;
+    }
+    
+    .beoplay-product-text{
+        display: none;
+    }
 
 }
 
 @media all and (max-width:1140px){
 
     /**************Contents****************/ 
+
+    #beoplay-design .design-text-left{
+        width:400px;
+    }
 
 }
 
@@ -29,11 +159,180 @@
     /**************Contents****************/ 
 
 
+    #beoplay-sound .sound-slide02 {
+        width: 400px;
+    }
+
+    #beoplay-design .design-text-left{
+        width:350px;
+    }
+
+    #beoplay-silence {
+        background-position: 65%;
+    }
+
 }
 
 @media all and (max-width:1024px){
 
- /**************Contents****************/ 
+    .section{
+        height: auto;
+    }
+
+
+    /**************Contents****************/ 
+
+    /*Sound*/
+
+    #beoplay-sound{
+        padding:30px;
+        background-size: cover;
+    }
+
+    #beoplay-sound .beoplay-title{
+        position:unset;
+        text-align: center;
+      }
+
+    #beoplay-sound .sound-slide01{
+        width:90%;
+        height: 400px;
+        position:unset;
+    }
+    
+    #beoplay-sound .sound-slide01 img{
+        width:100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #beoplay-sound .sound-slide02{
+        width:90%;
+        height: 300px;
+        margin-top:50px;
+        position:relative;
+        left:0;
+    }
+
+
+    /*Technology*/
+
+    .pin-wrap > * {
+        min-width: 100vw;
+    }
+
+    .technology-left-img{
+        height: 70vh;
+    }
+
+    .technology-second-img{
+        width: 500px;
+        height: 32vh;
+        object-fit: cover;
+    }
+    .technology-center-img{
+        height: 70vh;
+    }
+    .technology-right-img{
+        height: 70vh;
+    }
+
+    .technology-third-img{
+        display: none;
+    }
+
+    .technology-contents-inner{
+        display: block;
+    }
+
+    .technology-contents-intro02 .technology-text{
+        padding-left:0;
+    }
+
+    /*Design*/
+
+    .design-contents{
+        height: auto;
+    }
+
+    .design-contents>*{
+        position:unset;
+    }
+
+    .design-contents img{
+        width:100%;
+    }
+
+    #beoplay-design .design-text-left{
+        width:100%;
+        padding:50px 0;
+        box-sizing: border-box;
+    }
+
+    .design-contents-intro02 .design-text-left{
+        text-align: left;
+    }
+
+
+    /*Silence*/
+
+    #beoplay-silence {
+        background-position: 10%;
+    }
+
+    #beoplay-silence .beoplay-silence-text{
+        bottom:50px;
+    }
+
+
+    /*Product*/
+
+    .main{
+        display: block;
+    }
+
+    .left-side{
+        max-width:100%;
+        text-align: center;
+    }
+
+    .left-side .main-wrapper{
+        margin:0;
+        margin-top:30px;
+    }
+
+    .main-content{
+        display: none;
+    }
+
+    .center{
+        display: block;
+        text-align: center;
+    }
+
+    .center .bottle-img{
+        left:100px;
+    }
+
+    .button-wrapper{
+        top:65%;
+    }
+
+
+    /*Service*/
+
+    #beoplay-service .flex{
+        display: block;
+    }
+
+    #beoplay-service .beoplay-service-contents {
+        width: 100%;
+    }
+
+
+    footer .footer-info-contents{
+        padding:20px;
+    }
 
 }
 
@@ -41,17 +340,148 @@
     /**************Contents****************/ 
 
 
+
+    #beoplay-silence{
+        background-position: 20%;
+    }
+
+    #beoplay-silence .beoplay-silence-text{
+        right: auto;
+        left:50px;
+    }
+
+    .center .bottle-img{
+        left:50px;
+    }
+
+
+
 }
 
 @media all and (max-width:768px){
 
-/**************Contents****************/ 
+    /**************Contents****************/ 
 
+    .beoplay-intro-contents .intro-title{
+        font-size: 4rem;
+    }
+
+
+    /*Sound*/
+
+    #beoplay-sound .sound-slide02{
+        height: 400px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        top:10%;
+    }
+
+
+    /*Silence*/
+
+    #beoplay-silence {
+        background-position: 30%;
+    }
+
+    #beoplay-silence .beoplay-silence-text{
+        width:100%;
+        padding:30px;
+        left:0;
+        bottom:0;
+    }
+
+    #beoplay-silence .beoplay-silence-ex{
+        width:inherit;
+    }
+
+
+    /*Product*/
+
+    .center{
+        margin-bottom:80px;
+    }
+
+    .center .bottle-bg{
+        width:300px;
+        height: 450px;
+    }
+
+    .center .bottle-img{
+        width:100%;
+        left:0;
+    }
+
+    .main-title{
+        font-size:4rem
+    }
+
+
+    .button-wrapper{
+        top:auto;
+        bottom:30px;
+        right: auto;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    /*Download*/
+
+    #beoplay-download .beoplay-download-component{
+        text-align: center;
+    }
+
+    #beoplay-download .flex{
+        display: block;
+    }
+
+    #beoplay-download .beoplay-component-text{
+        margin-left:0;
+        margin-top:20px;
+    }
+
+    #beoplay-download .beoplay-download-guide{
+        border-top:none;
+    }
+
+    #beoplay-download .beoplay-download-guide div{
+        width:100%;
+        padding:20px 0;
+        text-align: center;
+        border-top: 1px solid #efefef;
+    }
+
+    /*Service*/
+
+    #beoplay-service .beoplay-service-contents{
+        margin:0;
+    }
+
+    /*Footer*/
+
+    footer{
+        text-align: center;
+    }
+
+    footer .flex{
+        display: block;
+    }
 
 }
 
 @media all and (max-width:480px){
 
-/**************Contents****************/ 
+    /**************Contents****************/ 
+    .beoplay-intro-contents .intro-title{
+        font-size: 2.6rem;
+    }
+
+    .center .bottle-bg{
+        width:200px;
+        height: 350px;
+    }
+
+
+
 }
 

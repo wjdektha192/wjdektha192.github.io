@@ -1,23 +1,6 @@
-
-
-
-TweenMax.to('#intro', 1, {
-    delay: 3,
-    clipPath: "circle(0% at 50% 50%)",
-    ease: Power3.easeOut,
-});
-
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-
-
 const pageContainer = document.querySelector(".beoplay-contents");
-
 
 /* SMOOTH SCROLL */
 const scroller = new LocomotiveScroll({

@@ -1,60 +1,4 @@
 
-#intro {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #111111;
-  z-index: 999999999;
-  clip-path: circle(150% at 50% 50%);
-  /* display: none; */
-}
-
-#intro svg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-}
-
-#intro .intro_circle {
-  fill: transparent;
-  stroke: #ffffff;
-  stroke-width: 2px;
-  stroke-dashoffset: 1150;
-  stroke-dasharray: 1150;
-  animation: dash 1.8s 1 forwards 1s;
-}
-
-@keyframes dash {
-  to {
-      stroke-dashoffset: 0;
-  }
-}
-
-#intro > img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Animation */
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
 /*Beoplay-Menu*/
 #beoplay-menu{
   width:100%;
@@ -254,17 +198,14 @@
   top:0;
   left: 0;
   width:802px;
-  height: 969px;
+  height: 100vh;
 }
 
-.sound-slide01 .swiper-slide{
-  background: wheat;
-}
 
 #beoplay-sound .sound-slide02{
   position:absolute;
   bottom: 0;
-  right: 500px;
+  left: 890px;
   width:500px;
   height: 350px;
 }
@@ -276,7 +217,7 @@
 #beoplay-sound .sound-slide03{
   position:absolute;
   top:150px;
-  right: 150px;
+  left: 1325px;
   width:400px;
   height:400px;
 }
@@ -286,7 +227,7 @@
 }
 
 .swiper-button-next, .swiper-button-prev{
-  top:30%;
+  top:23%;
 }
 
 .swiper-button-prev{
@@ -352,25 +293,6 @@
   margin:0 150px;
   box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
 /*Beoplay-Design*/
@@ -761,7 +683,7 @@
 #beoplay-service .color-box{
   width:100%;
   height: 45vh;
-  background: #ebe8e4;
+  background: #dfdbd6;
   position:absolute;
   top:0;
   left:0;
@@ -780,7 +702,7 @@
   padding-top:40px;
   box-sizing: border-box;
   font-family: var(--kor-font);
-  color:var(--button-color);
+  color:#6c614d;
   z-index: 1;
 }
 
