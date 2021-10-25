@@ -21,15 +21,29 @@
 </head>
 
 <body>
-    <div id="beoplay-contents" class="beoplay-contents">
 
-        <!--header Beoplay Menu-->
-        <div id="beoplay-menu" class="beoplay-menu">
-            <img src="assets/img/header/logo.png" alt="logo" />
-        </div>
+    <section id="intro" style="clip-path: circle(0% at 50% 50%);">
+        <svg>
+            <circle cx="50%" cy="50%" r="180" class="intro_circle"></circle>
+        </svg>
+    </section>
+
+    <!--header Beoplay Menu-->
+    <header id="beoplay-menu" class="beoplay-menu">
+        <img src="assets/img/header/logo.png" alt="logo" />
+    </header>
+
+    <div id="beoplay-contents" class="beoplay-contents">
 
         <!--section00Beoplay Intro-->
         <div id="beoplay-intro" class="beoplay-intro">
+            <div class="section beoplay-intro-contents">
+                <div class="intro-contents-title">
+                    <img src="assets/img/section00/logo-w.png" alt="logo" />
+                    <p class="intro-title">BEOPLAY EQ</p>
+                    <p class="intro-ex">Immerse yourself in pure sound. <br>Noise cancelling earphones with 6 built-in microphones,<br>for clear calls and authentic audio.</p>
+                </div>
+            </div>
             <div class="scroll-down">
                 <div class="scroll-down-text">SCROLL DOWN</div>
                 <div class="scroll-down-bar"></div>
@@ -38,113 +52,172 @@
         </div>
 
         <!--section01 Beoplay Sound-->
-        <div id="beoplay-sound" class="section beoplay-sound flex">
-            <p>BANG&OLUFSEN</p>
-            <p>beoplay EQ</p>
-
-            <div class="beoplay-sound-contents">
-                <div class="swiper sound-slide sound-slide01">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/img/section01/sec_img01.jpg" alt="section-sound" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/section01/sec_img02.jpg" alt="section-sound" />
-                        </div>
+        <div id="beoplay-sound" class="section beoplay-sound">
+            <div class="beoplay-title">
+                <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                <p class="beoplay-title-category">SOUND</p>
+            </div>
+            <div class="swiper sound-slide01">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/section01/sec_img01.jpg" alt="section01" /></div>
+                    <div class="swiper-slide"><img src="assets/img/section01/sec_img02.jpg" alt="section01" /></div>
+                </div>
+            </div>
+            <div class="swiper sound-slide02">
+                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="beoplay-text-numbering">01</p>
+                        <br>
+                        <p class="beoplay-text-title">
+                            사실적인 오디오
+                        </p>
+                        <br>
+                        <p class="beoplay-text-ex">
+                            자타가 공인하는 사운드 엔지니어들이 튜닝한 진정한 노이즈 캔슬링 이어폰이 Bang & Olufsen Signature Sound를 제공합니다. 역동적인 새 드라이버가 제공하는 강력하고 사실적인 오디오를 즐기세요. 자동 소음 감소를 위한 맞춤형 핏이 강력한 오디오 성능을 더욱 강화합니다.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="beoplay-text-numbering">02</p>
+                        <br>
+                        <p class="beoplay-text-title">
+                            ANC 적응 노이즈 캔슬링 헤드폰
+                        </p>
+                        <br>
+                        <p class="beoplay-text-ex">
+                            적응 ANC 및 음향 기술이 완벽한 침묵, 사실적인 오디오, 방해 없는 선명한 통화를 위해 안정적인 성능을 냅니다. 다양한 배경 소음을 보정하는 Beoplay EQ는 어디서든 진정한 몰입감을 안겨줍니다.
+                        </p>
                     </div>
                 </div>
-                <div class="swiper sound-slide sound-slide02">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            0111
-                        </div>
-                        <div class="swiper-slide">02</div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                    <img src="assets/img/section01/btn-next.png" alt="section01bth" />
                 </div>
-                <div class="swiper sound-slide03">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/img/section01/product01.png" alt="sound-product" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/section01/product02.png" alt="sound-product" />
-                        </div>
+                <div class="swiper-button-prev">
+                    <img src="assets/img/section01/btn-prev.png" alt="section01bth" />
+                </div>
+            </div>
+            <div class="swiper sound-slide03">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/section01/product01.png" alt="section01" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/section01/product02.png" alt="section01" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--section02 Beoplay-Design-->
-        <div id="beoplay-design" class="beoplay-design">
-            <div class="contents">
-                <div class="beoplay-title">
-                    <p class="beoplay-title-header">BANG&OLUFSEN</p>
-                    <p class="beoplay-title-category">DESIGN</p>
-                </div>
-            </div>
-        </div>
-
-        <!--section03 Beoplay-Technology-->
+        <!--section02 Beoplay-Technology-->
         <div id="beoplay-technology" class="beoplay-technology">
             <div class="pin-wrap">
                 <div class="beoplay-title">
                     <p class="beoplay-title-header">BANG&OLUFSEN</p>
                     <p class="beoplay-title-category">TECHNOLOGY</p>
                 </div>
-                <img src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
-                    alt="">
-                <img src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
-                    alt="">
-                <img src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
-                    alt="">
+                <div class="beoplay-technology-contents">
+                    <img src="assets/img/section02/sec_img01.jpg" alt="section02" />
+                    <div class="technology-contents-intro01">
+                        <div class="technology-text">
+                            <p class="beoplay-text-numbering">01</p>
+                            <p class="beoplay-text-title">완벽한 연결</p>
+                            <br>
+                            <p class="beoplay-text-ex">
+                                진정한 무선 청취 경험을 위해 Beoplay EQ는 블루투스 5.2을 비롯한 다양한 스트리밍 옵션을 지원합니다. 초저전력 성능과 고급 기술 덕분에 낮은 배터리 소비로 더 안정적인 연결이 보장되므로 더 오랜 시간 동기화되어 있을 수 있습니다.</p>
+                            <br>
+                            <button>More</button>
+                        </div>
+                        <img src="assets/img/section02/sec_img02.jpg" alt="section02" />
+                    </div>
+                    <img src="assets/img/section02/sec_img03.jpg" alt="section02" class="technology-center-img" />
+                    <div class="technology-contents-intro02">
+                        <img src="assets/img/section02/sec_img04.jpg" alt="section02" />
+                        <div class="technology-contents-inner">
+                            <img src="assets/img/section02/sec_img05.jpg" alt="section02" />
+                            <div class="technology-text">
+                                <p class="beoplay-text-numbering">02</p>
+                                <p class="beoplay-text-title">배터리 무선 충전</p>
+                                <br>
+                                <p class="beoplay-text-ex">
+                                    고급 배터리가 최대 20시간(ANC 사용 시 6.5시간)의 재생 시간을 제공하며, 빠른 충전 기능을 통해 20분 충전하는 것만으로 재생 시간을 2시간 더 늘릴 수 있습니다.</p>
+                                <br>
+                                <button>More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/section02/sec_img06.jpg" alt="section02" class="technology-right-img" />
+                </div>
+            </div>
+        </div>
+
+        <!--section03 Beoplay-Design-->
+        <div id="beoplay-design" class="beoplay-design">
+            <div class="contents">
+                <div class="beoplay-title">
+                    <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                    <p class="beoplay-title-category">DESIGN</p>
+                </div>
+                <div class="beoplay-design-contents">
+                    <div class="design-contents design-contents-intro01">
+                        <img src="assets/img/section03/sec_img01.png" class="design-contents-img" alt="section03" />
+                        <br>
+                        <div class="design-text-left">
+                            <p class="beoplay-text-numbering">01</p>
+                            <p class="beoplay-text-title">고품질 소재</p>
+                            <br>
+                            <p class="beoplay-text-ex">
+                                산화 알루미늄과 방습 질감의 하우징 등 내구성이 뛰어난 최고급 소재로 제작되었습니다. 컴팩트한 알루미늄 충전 케이스에는 Qi 충전에 최적화된 고무 코팅 베이스가 있습니다.</p>
+                            <br>
+                            <button>More</button>
+                        </div>
+                    </div>
+                    <div class="design-contents design-contents-intro02">
+                        <img src="assets/img/section03/sec_img02.png" class="design-contents-img" alt="section03" />
+                        <br>
+                        <div class="design-text-left">
+                            <p class="beoplay-text-numbering">02</p>
+                            <p class="beoplay-text-title">우아한 인체공학</p>
+                            <br>
+                            <p class="beoplay-text-ex">Beoplay EQ는 편안하게 착용할 수 있도록 인체공학적 모양으로 되어 있습니다. 다양한 사이즈의 교체 가능한 이어팁 덕분에 딱 맞게 조정할 수 있습니다. 알루미늄 터치 인터페이스를 통해 기능을 쉽게 이용할 수 있습니다.</p>
+                            <br>
+                            <button>More</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <!--section04 Beoplay-Silence-->
         <div id="beoplay-silence" class="beoplay-silence">
-            <div class="beoplay-title">
-                <p class="beoplay-title-header">BANG&OLUFSEN</p>
-                <p class="beoplay-title-category">The Sound of silence</p>
+            <div class="beoplay-silence-text">
+                <div class="beoplay-title">
+                    <p class="beoplay-title-header">BANG&OLUFSEN</p>
+                    <p class="beoplay-title-category">The Sound of silence</p>
+                </div>
+                <br>
+                <br>
+                <div class="beoplay-silence-ex">
+                    <p class="silence-txt beoplay-text-title">평온의 순간 만들기</p>
+                    <br>
+                    <p class="silence-txt beoplay-text-ex">
+                        집 안에서 분주하게 움직일 때 잠시 시간을 내어 자기 자신에게 집중해보세요. 하이브리드 ANC가 배경 소음을 보정하고, 아담한 인이어가 귀에 딱 맞기 때문에 불편을 줄입니다. 작고 가벼운 Beoplay EQ 인이어 헤드폰은 베개를 베고 있을 때에도 착용할 수 있을 만큼 편안합니다. 가장 필요한 순간에 평온을 즐기고 좋아하는 앨범의 방해없이 제대로 된 음질로 감상하세요.
+
+                    </p>
+                </div>
             </div>
         </div>
 
         <!--section05 Beoplay-Product-->
-        <div id="beoplay-product" class="section beoplay-product">
-            <div class="contents">
+        <div id="beoplay-product" class="beoplay-product">
+            <div class="beoplay-product-text">
+                <p>BANG&OLUFSEN</p>
+                <p>beoplay EQ</p>
+            </div>
+            <div class="beoplay-product-contents">
                 <div class="container">
                     <div class="mySwiper">
-
                         <div class="main-wrapper swiper-wrapper">
-                            <div class="main swiper-slide" id="sand">
-                                
-                                <div class="left-side">
-                                    <div class="main-wrapper">
-                                        <h3 class="main-header">beoplay EQ</h3>
-                                        <h1 class="main-title">Sand</h1>
-                                        <h2 class="main-subtitle">€ 399</h2>
-                                    </div>
-                                    <div class="main-content">
-                                        <div class="main-content__title">In 20 years, there could be more plastic in our
-                                            oceans than fish.</div>
-                                        <div class="main-content__subtitle">절제되어 있으면서도 뚜렷한 샌드 디자인으로, 레이저로 새긴 로고와 알루미늄 세부
-                                            작식이 악센트를 줍니다.</div>
-                                        <div class="more-menu">
-                                            Shop Now
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="center">
-                                    <div class="right-side__img">
-                                        <img class="bottle-bg" src="assets/img/section05/bg01.jpg" alt="">
-                                        <img class="bottle-img" src="assets/img/section05/product01.png" />
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="main swiper-slide" id="black">
                                 <div class="left-side">
                                     <div class="main-wrapper">
@@ -153,13 +226,12 @@
                                         <h2 class="main-subtitle">€ 399</h2>
                                     </div>
                                     <div class="main-content">
-                                        <div class="main-content__title">The Earth’s area affected by desertification is
-                                            approx 11 times India’s size.
+                                        <div class="main-content__title">Adaptive noise cancelling wireless earphones
                                         </div>
-                                        <div class="main-content__subtitle">유행을 타지 않는 클래식 블래의 우아함을 알루미늄 세부 장식과 레이저로 새긴
+                                        <div class="main-content__subtitle">유행을 타지 않는 클래식 블랙의 우아함을 알루미늄 세부 장식과 레이저로 새긴
                                             현대적인 로고가 보완합니다.</div>
                                         <div class="more-menu">
-                                            Shop Now
+                                            Shop Now <i class="fas fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -170,49 +242,184 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="main swiper-slide" id="sand">
+                                <div class="left-side">
+                                    <div class="main-wrapper">
+                                        <h3 class="main-header">beoplay EQ</h3>
+                                        <h1 class="main-title">Sand</h1>
+                                        <h2 class="main-subtitle">€ 399</h2>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="main-content__title">Adaptive noise cancelling wireless earphones</div>
+                                        <div class="main-content__subtitle">절제되어 있으면서도 뚜렷한 샌드 디자인으로, 레이저로 새긴 로고와 알루미늄 세부
+                                            장식이 악센트를 줍니다.</div>
+                                        <div class="more-menu">
+                                            Shop Now <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="right-side__img">
+                                        <img class="bottle-bg" src="assets/img/section05/bg01.jpg" alt="">
+                                        <img class="bottle-img" src="assets/img/section05/product01.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-wrapper">
+                                <div class="swiper-button swiper-next-button product-next-button">
+                                    <p>Next Product <span class="arrow">--></span></p>
+                                </div>
+                            </div>
                         </div>
-
-
-
                     </div>
+                </div>
+                <p class="product-line"></p>
+                <p class="product-line"></p>
+                <p class="product-line"></p>
+                <p class="product-line"></p>
+            </div>
+        </div>
+
+        <!--section06 Beoplay-Download-->
+        <div id="beoplay-download" class="beoplay-download">
+            <div class="contents">
+                <div class="beoplay-download-component flex">
+                    <img src="assets/img/section06/sec_img01.png" alt="section06" />
+                    <div class="beoplay-component-text">
+                        <p class="beoplay-title-header">제품구성</p>
+                        <br>
+                        <p class="beoplay-text-ex">
+                            Beoplay EQ<br>
+                            무선 충전 기술이 내장된 충전 케이스<br>
+                            충전용 USB A/ USB C 케이블, 0.5m<br>
+                            4가지 사이즈의 실리콘 이어팁(XS, S, M, L)<br>
+                            1가지 사이즈의 Comply™ 팁(M)<br>
+                            빠른 시작 안내서
+                        </p>
+                    </div>
+                </div>
+                <div class="beoplay-download-guide flex">
+                    <div><i class="fas fa-download"></i> 빠른 시작 안내서</div>
+                    <div><i class="fas fa-download"></i> 사용 설명서</div>
+                    <div><i class="fas fa-download"></i> 제품 안내서</div>
                 </div>
             </div>
         </div>
 
-        <!--section06 Beoplay-Service -->
+        <!--section07 Beoplay-Service -->
         <div id="beoplay-service" class="beoplay-service">
+            <div class="color-box"></div>
             <div class="beoplay-title">
                 <p class="beoplay-title-header">BANG&OLUFSEN</p>
                 <p class="beoplay-title-category">SERVICE</p>
             </div>
             <div class="contents flex">
                 <div class="beoplay-service-contents">
-                    1
+                    <div class="service-text">
+                        <img src="assets/img/section07/sec_img01.jpg" alt="section07" />
+                        <br>
+                        <br>
+                        <br>
+                        <p class="service-text-caption">Find Earphone</p>
+                        <p class="service-text-title">나에게 맞는 이어폰 찾기</p>
+                        <button>More</button>
+                    </div>
                 </div>
                 <div class="beoplay-service-contents">
-                    2
+                    <div class="service-text">
+                        <img src="assets/img/section07/sec_img02.jpg" alt="section07" />
+                        <br>
+                        <br>
+                        <br>
+                        <p class="service-text-caption">Store Experience</p>
+                        <p class="service-text-title">매장에서 체험하기</p>
+                        <button>More</button>
+                    </div>
                 </div>
                 <div class="beoplay-service-contents">
-                    3
+                    <div class="service-text">
+                        <img src="assets/img/section07/sec_img03.jpg" alt="section07" />
+                        <br>
+                        <br>
+                        <br>
+                        <p class="service-text-caption">Online Service</p>
+                        <p class="service-text-title">온라인 전용 서비스</p>
+                        <button>More</button>
+                    </div>
                 </div>
             </div>
-            <p class="background-text">BANG&OLUFSEN</p>
         </div>
 
         <!--footer Beoplay-Footer-->
         <footer>
-            <div class="contents">
-                푸터
+            <div class="contents flex">
+                <div class="footer-info-contents">
+                    <p>고객관리</p>
+                    <ul>
+                        <li>로그인/계정 만들기</li>
+                        <li>온라인 전용서비스</li>
+                        <li>FAQ</li>
+                        <li>고객지원</li>
+                        <li>문의</li>
+                        <li>매장 찾기</li>
+                        <li>CEO에게 피드백 제출</li>
+                    </ul>
+                </div>
+                <div class="footer-info-contents">
+                    <p>회사정책</p>
+                    <ul>
+                        <li>접근성</li>
+                        <li>위조</li>
+                        <li>쿠키</li>
+                        <li>개인 정보 정책</li>
+                        <li>이용 약관</li>
+                    </ul>
+                </div>
+                <div class="footer-info-contents">
+                    <p>회사소개</p>
+                    <ul>
+                        <li>회사 소개</li>
+                        <li>보도 자료</li>
+                        <li>투자자 정보</li>
+                        <li>매장 가맹 신청</li>
+                        <li>For industry professionals</li>
+                        <li>Partners & B2B</li>
+                        <li>구인 정보</li>
+                        <li>BangOlufsenCollective</li>
+                    </ul>
+                </div>
+                <div class="footer-info-contents">
+                    <p>국가/지역</p>
+                    <img src="assets/img/footer/country.png" alt="footer" /><span>Korea</span>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>앱 살펴보기</li>
+                        <li>The House of Bang & Olufsen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contents footer-social">
+                <ul>
+                    <a href="https://www.facebook.com/bangolufsen/" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="https://www.instagram.com/bangolufsen/?hl=en" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                    <a href="https://twitter.com/BangOlufsen" target="_blank"><li><i class="fab fa-twitter"></i></li></a>
+                    <a href="https://www.youtube.com/user/bangolufsen" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+                    <a href="https://www.pinterest.dk/bangolufsen/" target="_blank"><li><i class="fab fa-pinterest-p"></i></li></a>
+                </ul>
+            </div>
+            <div class="footer-contents footer-logo">
+                <img src="assets/img/footer/logo.png" alt="footer" />
             </div>
         </footer>
-
     </div>
 
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    
     <script src="assets/js/script.js"></script>
 </body>
 

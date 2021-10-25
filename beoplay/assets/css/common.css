@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 
 *{
@@ -48,27 +51,73 @@ p, span, a, ul li, h1, h2, h3, h4, h5, h6{
 
 :root {
     --sand-bg: #d8c3b8;
+    --sand-color:#97715d;
     --black-bg: #333;
-    --black-color:#fff;
+    --black-color:#cecece;
+    --title-color:#7b7165;
+    --caption-color:#868686;
+    --button-color:#95794d;
     --header-font:'Lexend Deca', sans-serif;
     --tit-font:'Libre Baskerville', serif;
     --category-font:'Maven Pro', sans-serif;
-  }
+    --number-font:'Oswald', sans-serif;;
+    --kor-font:'Gothic A1', sans-serif;
+    --arrow-font:'Inter', sans-serif;
+}
 
 .beoplay-title{
     line-height: 50px;
     padding:30px 0;
-  }
+}
 
 .beoplay-title-header{
     font-family: var(--header-font);
     font-size: 0.8rem;
     letter-spacing: 4px;
-  }
+    color:var(--caption-color);
+}
   
 .beoplay-title-category{
     font-size:3.5rem;
     font-family: var(--category-font);
     font-weight: 600;
-  }
-  
+    color: var(--title-color);
+}
+
+button{
+    width:100px;
+    padding: 8px 0;
+    border: 1px solid var(--button-color);
+    color:var(--button-color);
+    background: none;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--button-color);
+    color:#fff;
+}
+
+.beoplay-text-numbering{
+    font-size:5rem;
+    font-weight: bold;
+    color:var(--title-color);
+    font-family: var(--number-font);
+}
+
+.beoplay-text-title{
+    font-size:1.5rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color:var(--title-color);
+    font-family: var(--kor-font);
+}
+
+.beoplay-text-ex{
+    font-weight: 300;
+    line-height: 30px;
+    color:var(--caption-color);
+    letter-spacing: -0.5px;
+}
+
