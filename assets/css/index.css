@@ -1,0 +1,227 @@
+/*Home*/
+
+.home {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background-color: #ffe400;
+}
+  
+.home-content {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.home h1{
+  font-weight: 700;
+  font-size: 5em;
+  color: #000;
+}
+
+.home p {
+  font-weight: 300;
+  font-size: 2.2em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+
+/*About*/
+
+#about{
+  text-align:left;
+}
+
+#about h2{
+font-weight: 700;
+font-size: 4em;
+color: #ffe400;
+}
+
+#about p {
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.7;
+  color:#555;
+}
+
+.scroll-indicator {
+  display: none;
+  }
+
+.arrow {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 0.5em;
+}
+
+
+/*Skill*/
+
+.skills-section {
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1417733403748-83bbc7c05140?crop=entropy&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1450) no-repeat center center;
+  background-size: cover;
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
+.skills-icon {
+  font-size: 5em;
+  color: #ffe400;
+}
+
+.skills-text {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffe400;
+}
+
+.skills-section .section-title {
+  color: #ffe400;
+}
+
+#skills .skills-contents{
+  width:25%;
+  text-align: center;
+}
+
+
+/*Work*/
+
+#work{
+  background: #000;
+}
+
+.work-contents{
+  margin-bottom:150px;
+}
+
+.work-contents:last-child{
+  margin-bottom:0;
+}
+
+.work-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  text-align: left;
+}
+
+.work-img{
+  width:100%;
+  position:absolute;
+  top:0;
+}
+
+.work-title {
+  display: block;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  padding:30px 20px;
+  box-sizing: border-box;
+  background-color: rgba(55,55,55,0.9);
+  z-index: 2;
+}
+
+.work-title span{
+  letter-spacing: -0.5px;
+}
+
+.work-name{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffe400;
+}
+
+.work-info{
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 1.2rem;
+  color:#fff;
+}
+
+
+/*Contact*/
+
+#contact{
+  height: 85vh;
+  background: #ffe400;
+  text-align: center;
+}
+
+.contact-text {
+font-size: 2.2em;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.contact-section {
+  position: relative;
+}
+  
+.contact-section a:hover {
+  border-bottom: 4px solid #000;
+}
+
+.mail-text {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+}
+.mail-text:hover, .mail-text:focus {
+  color: #000;
+}
+
+
+/*Navigation*/
+nav{
+  width:100%;
+}
+
+.navbar-brand span {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.navbar-custom {
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #000;
+}
+
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li > a:focus {
+  background: none;
+}
+
+.navbar-custom .nav li.active a:before,
+.navbar-custom .nav > li > a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 20px;
+  border-bottom: 4px solid #000;
+}
+
+.navbar-custom a {
+  font-weight: 600;
+  color: #000;
+}
+
+.navbar-toggle {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px;
+  border: none;
+}
