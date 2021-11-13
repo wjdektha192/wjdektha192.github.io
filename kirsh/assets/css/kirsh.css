@@ -1,0 +1,291 @@
+#collection{
+  width:100%;
+  height: 3000px;
+  background: chocolate;
+}
+
+/*Kirsh-index*/
+
+#kirsh-index{
+  width:100%;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background: #868dc4;
+  z-index: 99999;
+}
+
+#kirsh-index .index-text{
+  width:300px;
+  height: 150px;
+  position:absolute;
+  background: url('../img/index/text.png') no-repeat;
+  animation: intro 1.5s steps(9) infinite .8s;
+}
+
+@keyframes intro {
+  to {
+      background-position: -2700px;
+  }
+}
+
+/*Kirsh-Collection*/
+
+/*Kirsh-Main*/
+
+#kirsh-main{
+  width: 100%;
+  height: 900px;
+  background: url('../img/kirsh/collection01.png')no-repeat center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+/*Kirsh-Lookbook*/
+
+#kirsh-contents{
+  height: 900px;
+  position: relative;
+}
+
+#kirsh-container{
+  width:100%;
+  height: auto;
+  position: relative;
+  z-index: 9;
+}
+
+#kirsh-lookbook{
+  width:100%;
+  height: auto;
+  background: #fff;
+  padding:50px;
+  box-sizing: border-box;
+}
+
+#kirsh-lookbook .sec-lookbook01{
+
+}
+
+
+
+
+/*Kirsh-Shop*/
+
+#kirsh-shop-main{
+  width:100%;
+  height: 650px;
+  background: url('../img/shop/shop01.png')no-repeat top;
+  background-attachment: fixed;
+  position:absolute;
+  top:0;
+}
+
+#kirsh-shop{
+  width:100%;
+  height: auto;
+  position:relative;
+  z-index: 9;
+}
+
+.kirsh-category-shop{
+  margin-top:100px;
+}
+
+.category-shop-slide{
+  width:100%;
+  height: 900px;
+  padding:30px;
+  box-sizing: border-box;
+  margin-bottom:100px;
+  background: darkgreen;
+}
+
+.category-shop-list{
+  margin-bottom:100px;
+}
+
+.category-shop-item{
+  width:100%;
+  height: auto;
+  margin-bottom:25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-shop-list .shop-item-list{
+  width:24%;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.shop-item-img{
+  width:100%;
+  height:533px;
+  position:relative;
+}
+
+.shop-item-img img{
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:0.5s;
+}
+
+.item-img02{
+  opacity: 0;
+}
+
+.shop-item-text{
+  height: 130px;
+  font-family: var(--text-regular-font);
+  text-align: center;
+  padding:20px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.shop-item-text .item-text-title{
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shop-item-text .item-text-cost{
+  color:#ccc;
+  text-decoration: line-through;
+}
+
+.shop-item-list:hover .item-img02{
+  transition:0.5s;
+  opacity: 1;
+}
+
+.kirsh-category-insta{
+  width:100%;
+  padding:30px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.category-insta-title{
+  font-family: var(--text-bold-font);
+  font-size:2.5rem;
+}
+
+.category-insta-id{
+  font-family: var(--text-regular-font);
+  font-size: 1.3rem;
+  margin-top:30px;
+  letter-spacing: -0.5px;
+}
+.category-insta-id a{
+  color: #555;
+  vertical-align: middle;
+}
+
+.category-insta-id img{
+  vertical-align: middle;
+  width:40px;
+  margin-right: 15px;
+}
+
+.category-insta-photo{
+  width:100%;
+  position:relative;
+}
+
+.instagram-slide{
+  margin:50px 0 100px;
+}
+
+.instagram-slide .swiper-slide{
+  height: 320px;
+}
+
+.instagram-slide .swiper-slide img{
+  width:100%;
+}
+
+
+/*Kirsh-Stockist*/
+
+#kirsh-stockist-main{
+  width:100%;
+  height: 650px;
+  background: url('../img/stockist/stockist01.png')no-repeat top;
+  background-attachment: fixed;
+  position:absolute;
+  top:0;
+}
+
+#kirsh-stockist .contents{
+  margin-bottom:100px;
+}
+
+.category-stockist-title{
+  font-family: var(--text-bold-font);
+  font-size:2.5rem;
+}
+
+.category-stockist-title img{
+  width:30px;
+}
+
+#kirsh-stockist .online-stockist{
+  margin:100px 0;
+}
+
+.kirsh-category-stockist ul li{
+  display: inline-block;
+  font-family: var(--kor-font);
+  margin-right: 15px;
+  margin-bottom:15px;
+  padding:15px 0;
+  border: 1px solid #ddd;
+}
+
+.kirsh-category-stockist ul li:hover{
+  border: 1px solid #eb1c24;
+  transition: 0.5s;
+}
+
+.online-stockist ul{
+  margin-top:50px;
+}
+
+.online-stockist ul li{
+  width:350px;
+  text-align: center;
+}
+
+.online-stockist a{
+  color:#000;
+}
+
+.offline-stockist ul li{
+  width:320px;
+  line-height: 30px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.offline-stockist ul li span{
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+}
+
+
+.offline-stockist-city{
+  font-family: var(--kor-font);
+  font-size:1.2rem;
+  font-weight: 500;
+}

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family:MazzardB;
+    src: url('../font/MazzardM-Bold.otf');
+}
+
+@font-face {
+    font-family:MazzardR;
+    src: url('../font/MazzardM-Regular.otf');
+}
+
+
+*{
+    padding:0; 
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+a, p, span, a, ul li, h1, h2, h3, h4, h5, h6{
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body{
+    width:100%; 
+    height:100%;
+}
+
+body::-webkit-scrollbar{width:10px}
+body::-webkit-scrollbar-track{background:rgba(0,0,0,0.2);}
+body::-webkit-scrollbar-thumb{background: #fff;}
+body {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+body.on{
+    overflow: hidden;
+}
+
+
+.section{
+    width:100%;
+    height: 100vh;
+    padding:50px 0;
+    box-sizing: border-box;
+}
+
+.contents{
+    width:1640px;
+    height: 100%;
+    margin:0 auto;
+    box-sizing: border-box;
+    position:relative
+}
+
+.contents::after{
+    display:block;
+    clear: both;
+    content:'';
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+:root{
+    --text-bold-font:MazzardB;
+    --text-regular-font:MazzardR;
+    --kor-font:'Noto Sans KR', sans-serif;
+}
+
+
+/*header*/
+
+#kirsh-header{
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
+    position:fixed;
+    background: #fff;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    z-index: 99;
+}
+
+#kirsh-header .kirsh-symbol{
+    width:50px;
+}
+
+#kirsh-header .user-menu{
+    position:absolute;
+    top:36px;
+    right: 30px;
+}
+
+#kirsh-header .user-menu li{
+    display: inline-block;
+    margin:0 15px;
+    cursor: pointer;
+    width:28px;
+}
+
+#kirsh-header .user-menu li img{
+    width:100%;
+}
+
+.user-menu-btn{
+    width:28px;
+    height: 28px;
+    position:fixed;
+    right: 47px;
+    top:39px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.user-menu-btn .menu-btn{
+    width:100%;
+    height: 2px;
+    background: #000;
+    position:relative;
+    transition: 0.5s;
+}
+
+.menu-btn:nth-child(1){
+    top:0;
+}
+
+.menu-btn:nth-child(2){
+    top:8px;
+}
+
+.menu-btn:nth-child(3){
+    top:16px;
+}
+
+.menu-btn.on:nth-child(1){
+    transform: rotate(45deg);
+    top:8px;
+    left:-10px;
+}
+
+.menu-btn.on:nth-child(2){
+    display: none;
+}
+
+.menu-btn.on:nth-child(3){
+    transform: rotate(-45deg);
+    top:6px;
+    left:-10px;
+}
+
+
+/*Kirsh-Menu*/
+
+#kirsh-menu{
+    width:100%;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+
+#kirsh-menu .kirsh-menu-contents{
+    width:100%;
+    height: 100vh;
+}
+
+.kirsh-menu{
+    display: none;
+}
+
+#kirsh-menu .menu-contents{
+    width:50%;
+    height: 100%;
+    padding:50px;
+    box-sizing: border-box;
+}
+
+#kirsh-menu .menu-contents p{
+    color:#373c5f;
+}
+
+#kirsh-menu .menu-contents-photo{
+    background: #9ca2d0;
+}
+
+#kirsh-menu .menu-contents-photo img{
+    width: 100%;
+}
+
+#kirsh-menu .menu-contents-photo p{
+    font-family: var(--text-regular-font);
+    text-align: right;
+    font-style: italic;
+    letter-spacing: -0.5px;
+}
+
+#kirsh-menu .menu-contents-list{
+    background: #f4f3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#kirsh-menu .menu-contents-list img{
+    width:150px;
+    margin:0 auto;
+}
+
+#kirsh-menu .menu-contents-list p{
+    font-family: var(--text-bold-font);
+    font-size:5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 50px 0;
+}
+
+.kirsh-main-sns li{
+    display: inline-block;
+    margin:0 20px;
+}
+
+.kirsh-main-sns i{
+    font-size:1.8rem;
+    color:#373c5f;
+}
+
+
+
+/*Kirsh-Footer*/
+
+#kirsh-footer{
+    width:100%;
+    padding:100px 30px;
+    box-sizing: border-box;
+    background:#2a2c3b;
+    font-family: var(--text-regular-font);
+    font-size:0.8rem;
+    color:#999;
+}
+
+#kirsh-footer .social-contents{
+    width:100%;
+    padding-bottom:20px;
+    border-bottom:1px solid #555;
+}
+
+.social-contents .footer-logo{
+    display: inline-block;
+    width:200px;
+}
+
+.social-contents ul{
+    float: right;
+}
+
+.social-contents ul li{
+    display: inline-block;
+    margin-left:15px;
+}
+
+.social-contents ul li img{
+    width:30px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.social-contents ul li img:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#kirsh-footer .footermenu-contents{
+    width:100%;
+    padding:20px 0;
+}
+
+.footermenu-contents ul li{
+    display: inline-block;
+}
+
+.footermenu-contents ul li:after{
+    content: "|";
+    margin:20px;
+}
+
+
+.footermenu-contents a{
+    color:#999;
+    font-weight: bold;
+}
+
+#kirsh-footer .information-contents{
+    line-height: 1.5rem;
+}
+
+
+/*Category Text*/
+
+.kirsh-category-text{
+    width:100%;
+    height: 650px;
+    position:relative;
+    overflow: hidden;
+}
+
+.kirsh-category-text p{
+    font-family: var(--text-bold-font);
+    font-size:6rem;
+    position:absolute;
+    left:-1000px;
+    transition: all 1.5s;
+    color:#fff;
+}
+
+.kirsh-category-text span{
+    color:#eb1c24;
+}
+
+.kirsh-category-text p:first-child{
+    bottom:120px;
+}
+.kirsh-category-text p:last-child{
+    bottom:5px;
+}
+
+.kirsh-category-text p:first-child.on{
+    left:0;
+}
+.kirsh-category-text p:last-child.on{
+    left:0;
+    transition-delay: 1.2s;
+}

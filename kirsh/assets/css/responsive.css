@@ -1,0 +1,36 @@
+/*Index*/
+@media all and (max-width:1024px){
+    #kirsh-index .main-text-box li img{
+        width:80%;
+    }
+}
+@media all and (max-width:768px){
+
+    #kirsh-index .main-box, #kirsh-index .right-box{
+        display: none;
+    }
+
+    #kirsh-index .mobile-text-box{
+        display:block;
+    }
+}
+@media all and (max-width:480px){
+    #kirsh-index .mobile-text-box{
+        padding:50px 20px;
+    }
+}
+
+
+
+/*Contents*/
+@media all and (max-width:1440px){
+
+}
+@media all and (max-width:1280px){}
+@media all and (max-width:1140px){}
+@media all and (max-width:1080px){}
+@media all and (max-width:1024px){}
+@media all and (max-width:860px){}
+@media all and (max-width:768px){}
+@media all and (max-width:480px){}
+@media all and (max-width:320px){}
