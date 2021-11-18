@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body class="on">
     <!--Kirsh Menu Button-->
     <div class="user-menu-btn">
         <p class="menu-btn"></p>
@@ -40,19 +40,17 @@
     <!--Kirsh-Menu-->
     <div id="kirsh-menu" class="kirsh-menu">
         <div class="kirsh-menu-contents flex">
-            <div class="menu-contents menu-contents-photo">
-                <img src="assets/img/common/menu.jpg" />
-                <p>
-                    <b>Post-Punk-Revival</b><br>
-                    Kirsh 2021 AW Editorial Collection Band Audition of Four girls with indivisuality
-                </p>
-            </div>
-            <div class="menu-contents menu-contents-list">
-                <img src="assets/img/common/logo.png" />
+            <div class="menu-contents-list">
+                <img src="assets/img/common/logo.png"  class="menu-logo"/>
                 <ul class="kirsh-main-menu">
                     <li>
                         <a href="kirsh.html">
                             <p>Collection</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lookbook.html">
+                            <p>Lookbook</p>
                         </a>
                     </li>
                     <li>
@@ -92,17 +90,63 @@
         <!--Kirsh-Main-->
         <section id="kirsh-main" class="kirsh-main">
         </section>
-
         <!--Kirsh-Container-->
         <section id="kirsh-container" class="kirsh-container">
-            <section id="kirsh-contents"></section>
-            <!--Kirsh-lookbook-->
-            <section id="kirsh-lookbook" class="kirsh-lookbook">
-                <div class="contents">
-                    <div class="sec-lookbook01"></div>
-                    <div class="sec-lookbook02"></div>
-                    <div class="sec-lookbook03"></div>
-                    <div class="sec-lookbook04"></div>
+            <section id="kirsh-contents">
+                <div class="kirsh-contents-text"></div>
+            </section>
+            <!--Kirsh-Collection-->
+            <section id="kirsh-collection" class="kirsh-collection">
+                <div class="section01 section">
+                    <div class="contents">
+                        <img src="assets/img/kirsh/collection-title.png" alt="collectionTitle" />
+                        <div class="section01-01">
+                            <img src="assets/img/kirsh/section01-01.png" alt="section01" />
+                            <img src="assets/img/kirsh/section01-02.png" alt="section01" />
+                        </div>
+                        <div class="section01-01">
+                            <img src="assets/img/kirsh/section01-03.png" alt="section01" />
+                            <img src="assets/img/kirsh/section01-04.png" alt="section01" />
+                        </div>
+                        <div class="section01-01">
+                            <img src="assets/img/kirsh/section01-05.png" alt="section01" />
+                            <img src="assets/img/kirsh/section01-06.png" alt="section01" />
+                        </div>
+                        <img src="assets/img/kirsh/section01-07.png" alt="section01" class="section01-07"/>
+                    </div>
+                </div>
+                <div class="section02 section">
+                    <div class="contents">
+                        <div class="section02-img"></div>
+                        <div class="section02-text">
+                            <p class="section02-title">KIRSH<br>POST-PUNK-REVIVAL</p>
+                            <p class="section02-ex">4명의 개성넘치는 친구들의 밴드 오디션 이야기가 담긴 21AW 에디토리얼 룩북이 공개되었습니다!<br>21AW 시즌을 맞이하여 그런지한 무드의 오버핏 니트와 시즌 타이틀인 'POST PUNK REVIVAL' 아트웍을<br>자수로 표현한 라이더 자켓을 만나보세요!</p>
+                            <button>COLLECTION SHOP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section03 section">
+                    <div class="contents">
+                        <img src="assets/img/kirsh/section03-01.png" alt="section03" class="section03-01"/>
+                        <div class="section03-02">
+                            <img src="assets/img/kirsh/section03-02.png" alt="section03" />
+                            <img src="assets/img/kirsh/section03-03.png" alt="section03" />
+                            <img src="assets/img/kirsh/section03-04.png" alt="section03" />
+                        </div>
+                    </div>
+                </div>
+                <div class="section-video">
+                    <video src="assets/img/kirsh/index.mp4" loop autoplay muted playsinline class="kirsh-video"></video>
+                </div>
+                <div class="section04 section">
+                    <div class="contents">
+                        <img src="assets/img/kirsh/section04-01.jpg" alt="collection" class="section04-01"/>
+                        <div class="section04-02">
+                            <img src="assets/img/kirsh/section04-02.png" alt="collection" class="section04-02-01" />
+                            <img src="assets/img/kirsh/section04-03.png" alt="collection" class="section04-02-02" />
+                        </div>
+                        <img src="assets/img/kirsh/section04-04.jpg" alt="collection" class="section04-04"/>
+                    </div>
                 </div>
             </section>
             <!--Kirsh-Footer-->
@@ -162,7 +206,6 @@
                 </div>
             </footer>
         </section>
-
     </section>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>

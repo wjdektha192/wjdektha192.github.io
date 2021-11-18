@@ -9,14 +9,11 @@ $(function () {
         $('.kirsh-menu').fadeToggle(500);
     });
 
-
     //Category Text
     $('.kirsh-category-text p').delay(1000).addClass('on');
 
-    //Shop Item Slide
-
     //Shop Instagram Slide
-    var swiper = new Swiper(".instagram-slide", {
+    new Swiper(".instagram-slide", {
         slidesPerView:5,
         spaceBetween: 10,
         loop:true,
@@ -25,5 +22,8 @@ $(function () {
             prevEl: ".insta-button-prev",
           },
     });
-
 });
+
+setTimeout(function(){
+  jQuery('body').removeClass('on');
+},3100);

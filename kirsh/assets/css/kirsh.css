@@ -12,7 +12,7 @@
   position:fixed;
   top:0;
   left:0;
-  background: #868dc4;
+  background: #567bb4;
   z-index: 99999;
 }
 
@@ -21,12 +21,12 @@
   height: 150px;
   position:absolute;
   background: url('../img/index/text.png') no-repeat;
-  animation: intro 1.5s steps(9) infinite .8s;
+  animation: intro 1.5s steps(10) infinite .8s;
 }
 
 @keyframes intro {
   to {
-      background-position: -2700px;
+      background-position: -3000px;
   }
 }
 
@@ -38,17 +38,33 @@
   width: 100%;
   height: 900px;
   background: url('../img/kirsh/collection01.png')no-repeat center;
+  background-size: cover;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 2;
 }
-
-
-/*Kirsh-Lookbook*/
 
 #kirsh-contents{
   height: 900px;
   position: relative;
+}
+
+.kirsh-contents-text{
+  position:absolute;
+  top:250px;
+  left:50%;
+  transform: translateX(-50%);
+  width:1000px;
+  height: 134px;
+  background: url('../img/kirsh/collection-text.png');
+  animation: collection 1.2s steps(4) infinite .4s;
+}
+
+@keyframes collection {
+  to {
+      background-position: -4000px;
+  }
 }
 
 #kirsh-container{
@@ -58,17 +74,193 @@
   z-index: 9;
 }
 
-#kirsh-lookbook{
+#kirsh-collection{
   width:100%;
   height: auto;
   background: #fff;
-  padding:50px;
   box-sizing: border-box;
 }
 
-#kirsh-lookbook .sec-lookbook01{
-
+#kirsh-collection .section01{
+  height: auto;
+  text-align: center;
 }
+
+#kirsh-collection .section01-01{
+  display: flex;
+  margin:150px 0;
+  justify-content: space-between;
+}
+
+#kirsh-collection .section01-07{
+  width:100%;
+}
+
+#kirsh-collection .section02{
+  height: auto;
+  background: #bac1cb;
+}
+
+.section02 .contents{
+  display: flex;
+  align-items: flex-end;
+}
+
+.section02 .section02-img{
+  width:700px;
+  height: 1049px;
+  background: url('../img/kirsh/section02-01.jpg');
+  animation: section02 1.2s steps(4) infinite .4s;
+}
+
+@keyframes section02 {
+  to {
+      background-position: -2800px;
+  }
+}
+
+.section02-text{
+  margin-left:100px;
+  margin-bottom:50px;
+  vertical-align: bottom;
+}
+
+.section02 .section02-title{
+  font-family: var(--point-font);
+  font-size:5rem;
+}
+
+.section02 .section02-ex{
+  font-family: var(--kor-font);
+  letter-spacing: -0.5px;
+  line-height: 30px;
+  margin:50px 0;
+}
+
+.section02 button{
+  height: 56px;
+  padding:15px 30px;
+  border: none;
+  background-color: #000;
+  font-family: var(--point-font);
+  font-size:1.5rem;
+  cursor: pointer;
+  color:#fff;
+}
+
+#kirsh-collection .section03{
+  height: auto;
+  background: url('../img/kirsh/section03-bg.jpg')no-repeat right;
+  background-size: cover;
+}
+
+.section03-01{
+  width:100%;
+  margin-bottom:150px;
+}
+
+#kirsh-collection .section03-02{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#kirsh-collection .section-video{
+  height: 800px;
+  overflow: hidden;
+}
+
+.section-video video{
+  width:100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+#kirsh-collection .section04{
+  height: auto;
+}
+
+.section04-01, .section04-04{
+  width:100%;
+}
+
+.section04-02{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin:150px 0;
+}
+
+
+/*Kirsh-lookbook*/
+
+#kirsh-lookbook-main{
+  width:100%;
+  height: 650px;
+  background: url('../img/lookbook/lookbook-main.jpg')no-repeat top;
+  background-attachment: fixed;
+  position:absolute;
+  top:0;
+}
+
+#kirsh-lookbook{
+  width:100%;
+  height: auto;
+  position:relative;
+  z-index: 9;
+}
+
+.kirsh-category-lookbook{
+  width:100%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.category-lookbook-list{
+  width:100%;
+  margin:100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lookbook-list{
+  width:450px;
+  height: auto;
+  text-align: center;
+}
+
+.lookbook-list img{
+  width:100%;
+}
+
+.lookbook-list-contents{
+  margin-bottom:150px;
+  cursor: pointer;
+}
+
+.lookbook-list-contents p{
+  margin-top:20px;
+  font-family: var(--text-bold-font);
+  letter-spacing: -0.5px;
+  color:#000;
+  transition:0.5s;
+}
+
+.lookbook-list-contents:hover p{
+  color:#eb1c24;
+}
+.lookbook-list-contents:hover img{
+  opacity: 0.6;
+}
+
+
+
+
+
 
 
 
@@ -91,21 +283,91 @@
   z-index: 9;
 }
 
-.kirsh-category-shop{
+.category-shop-product{
+  width:100%;
+  height: auto;
   margin-top:100px;
+  text-align: center;
 }
 
-.category-shop-slide{
+.shop-product-title{
+  font-family: var(--point-font);
+  font-size:4.5rem;
+}
+
+.shop-product-item{
   width:100%;
-  height: 900px;
+  height: auto;
+  margin-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom:100px;
+  border-bottom:1px solid #ddd;
+}
+
+.shop-product-item .product-item-list{
+  width:24%;
+  height: 600px;
+  display: inline-block;
+  cursor: pointer;
+  background: violet;
+  position:relative;
+}
+
+.shop-product-item .product-item-list div{
+  position:absolute;
+}
+
+.product-item-img img{
+  width:100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.product-item-text{
+  width:100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5;
   padding:30px;
   box-sizing: border-box;
-  margin-bottom:100px;
-  background: darkgreen;
+}
+
+.product-item-info{
+  width:100%;
+  z-index: 2;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-item-title{
+  font-family: var(--text-bold-font);
+  font-size:1.5rem;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+}
+
+.product-item-price{
+  font-family: var(--text-regular-font);
+  font-size:1.2rem;
+}
+
+.product-item-text .product-item-line{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.product-item-list:hover .product-item-text{
+  opacity: 1;
 }
 
 .category-shop-list{
-  margin-bottom:100px;
+  margin:100px 0;
+  text-align: center;
 }
 
 .category-shop-item{
@@ -145,7 +407,6 @@
 .shop-item-text{
   height: 130px;
   font-family: var(--text-regular-font);
-  text-align: center;
   padding:20px;
   box-sizing: border-box;
   line-height: 30px;
@@ -174,11 +435,6 @@
   padding:30px 0;
   box-sizing: border-box;
   text-align: center;
-}
-
-.category-insta-title{
-  font-family: var(--text-bold-font);
-  font-size:2.5rem;
 }
 
 .category-insta-id{
@@ -215,6 +471,10 @@
   width:100%;
 }
 
+.swiper-button-next:after,.swiper-button-prev:after{
+  content: '';
+}
+
 
 /*Kirsh-Stockist*/
 
@@ -227,20 +487,11 @@
   top:0;
 }
 
-#kirsh-stockist .contents{
-  margin-bottom:100px;
-}
-
-.category-stockist-title{
-  font-family: var(--text-bold-font);
-  font-size:2.5rem;
-}
-
-.category-stockist-title img{
+#kirsh-stockist img{
   width:30px;
 }
 
-#kirsh-stockist .online-stockist{
+.category-stockist-list{
   margin:100px 0;
 }
 
@@ -269,8 +520,13 @@
 
 .online-stockist a{
   color:#000;
+  width:100%;
+  height: 100%;;
 }
 
+.offline-stockist{
+  margin-top:100px;
+}
 .offline-stockist ul li{
   width:320px;
   line-height: 30px;
