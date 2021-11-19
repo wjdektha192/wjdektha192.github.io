@@ -57,13 +57,43 @@
   transform: translateX(-50%);
   width:1000px;
   height: 134px;
-  background: url('../img/kirsh/collection-text.png');
-  animation: collection 1.2s steps(4) infinite .4s;
+  background: url('../img/kirsh/collection-text.png')no-repeat;
+  animation: collection 0.8s steps(4) infinite .4s;
 }
 
 @keyframes collection {
   to {
       background-position: -4000px;
+  }
+}
+
+@keyframes collection2 {
+  to {
+      background-position: -3600px;
+  }
+}
+
+@keyframes collection3 {
+  to {
+      background-position: -2800px;
+  }
+}
+
+@keyframes collection4 {
+  to {
+      background-position: -2000px;
+  }
+}
+
+@keyframes collection5 {
+  to {
+      background-position: -1600px;
+  }
+}
+
+@keyframes collection6 {
+  to {
+      background-position: -1200px;
   }
 }
 
@@ -109,13 +139,31 @@
 .section02 .section02-img{
   width:700px;
   height: 1049px;
-  background: url('../img/kirsh/section02-01.jpg');
+  background: url('../img/kirsh/section02-01.jpg')no-repeat;
   animation: section02 1.2s steps(4) infinite .4s;
 }
 
 @keyframes section02 {
   to {
       background-position: -2800px;
+  }
+}
+
+@keyframes section02-01 {
+  to {
+      background-position: -2000px;
+  }
+}
+
+@keyframes section02-02 {
+  to {
+      background-position: -1600px;
+  }
+}
+
+@keyframes section02-03{
+  to {
+      background-position: -1200px;
   }
 }
 
@@ -308,31 +356,31 @@
 
 .shop-product-item .product-item-list{
   width:24%;
-  height: 600px;
+  height: auto;
   display: inline-block;
   cursor: pointer;
-  background: violet;
   position:relative;
-}
-
-.shop-product-item .product-item-list div{
-  position:absolute;
+  overflow: hidden;
 }
 
 .product-item-img img{
   width:100%;
-  height: 600px;
-  object-fit: cover;
+  display: block;
 }
 
 .product-item-text{
   width:100%;
   height: 100%;
-  color: #fff;
   opacity: 0;
   transition: 0.5;
   padding:30px;
   box-sizing: border-box;
+  left: 0;
+  top:0;
+}
+
+.product-item-text,.product-item-text div{
+  position:absolute;
 }
 
 .product-item-info{
@@ -341,7 +389,22 @@
   left:50%;
   top:50%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
+
+.product-item-line{
+  width:100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 .product-item-title{
   font-family: var(--text-bold-font);
@@ -384,6 +447,7 @@
   height: auto;
   display: inline-block;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .shop-item-img{
@@ -464,7 +528,7 @@
 }
 
 .instagram-slide .swiper-slide{
-  height: 320px;
+  height: auto;
 }
 
 .instagram-slide .swiper-slide img{
@@ -487,7 +551,7 @@
   top:0;
 }
 
-#kirsh-stockist img{
+#kirsh-stockist .stockist-icon{
   width:30px;
 }
 
@@ -532,6 +596,7 @@
   line-height: 30px;
   padding: 15px;
   transition: 0.5s;
+  box-sizing: border-box;
 }
 
 .offline-stockist ul li span{

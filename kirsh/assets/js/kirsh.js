@@ -15,12 +15,53 @@ $(function () {
     //Shop Instagram Slide
     new Swiper(".instagram-slide", {
         slidesPerView:5,
-        spaceBetween: 10,
         loop:true,
         navigation: {
             nextEl: ".insta-button-next",
             prevEl: ".insta-button-prev",
           },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            860: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            1140: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+            1440: {
+              slidesPerView: 5,
+              spaceBetween: 20
+            },
+          }
     });
 });
 

@@ -1,36 +1,352 @@
-/*Index*/
+/*Kirsh-Common*/
+
+@media all and (max-width:1600px){
+    .contents{
+        width:95%;
+    }
+}
+
+/*Mobile Start*/
+@media all and (max-width:860px){
+        /*Footer*/
+        #kirsh-footer .footermenu-contents{
+            line-height: 30px;
+        }
+}
+
+@media all and (max-width:768px){
+    /*Footer*/
+    #kirsh-footer{
+        padding:50px;
+    }
+    #kirsh-footer .social-contents{
+        text-align: center;
+    }
+    .social-contents ul{
+        float: unset;
+        margin-top:50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    /*Text*/
+    .kirsh-category-text p{
+        font-size:4.5rem;
+    }
+    .kirsh-category-text p:first-child{
+        bottom:85px;
+    }
+}
+
+@media all and (max-width:640px){
+    /*Header*/
+    #kirsh-header{
+        text-align: left;
+    }
+    .user-menu{
+        display: none;
+    }
+    .user-menu-btn{
+        right: 20px;
+    }
+
+    .menu-contents-list p{
+        font-size: 4rem;
+    }
+
+     /*Text*/
+     .kirsh-category-text p{
+        font-size:3.5rem;
+    }
+}
+
+@media all and (max-width:480px){
+    /*Header*/
+    .menu-contents-list p{
+        font-size: 3rem;
+    }
+
+    /*Footer*/
+    .social-contents .footer-logo{
+        width:150px;
+    }
+    .footermenu-contents ul li{
+        display: block;
+        text-align: center;
+    }
+    .footermenu-contents ul li:after{
+        margin:0;
+        content: '';
+    }
+    #kirsh-footer .information-contents{
+        text-align: center;
+        padding-top:30px;
+        border-top: 1px solid #555;
+    }
+
+    /*Text*/
+    .kirsh-category-text p:first-child{
+        bottom:60px;
+    }
+    .kirsh-category-text p{
+        font-size:2.5rem;
+    }
+}
+
+
+/*Kirsh-Collection*/
+
+@media all and (max-width:1600px){
+    #kirsh-collection .section01-01 img{
+        width:49%;
+    }
+
+    #kirsh-collection .section03-02 img{
+        width:32%
+    }
+
+    .section04-02-01{
+        width:54%
+    }
+
+    .section04-02-02{
+        width:45%;
+    }
+}
+
+@media all and (max-width:1080px){
+    .kirsh-contents-text{
+        width:900px;
+        height: 121px;
+        animation: collection2 0.8s steps(4) infinite .4s;
+        background-size: 3600px;
+    }
+
+    #kirsh-collection .section02{
+        text-align: center;
+    }
+
+    .section02-text{
+        margin:50px 0;
+    }
+
+    .section02 .contents{
+        display: block;
+    }
+
+    .section02 .section02-img{
+        margin:0 auto;
+    }
+
+}
+
 @media all and (max-width:1024px){
-    #kirsh-index .main-text-box li img{
-        width:80%;
+    .kirsh-contents-text{
+        width:700px;
+        height: 94px;
+        animation: collection3 0.8s steps(4) infinite .4s;
+        background-size: 2800px;
+    }
+
+}
+
+/*Mobile Start*/
+@media all and (max-width:860px){
+    #kirsh-collection .section01-01, #kirsh-collection .section03-02,.section04-02{
+        display: block;
+    }
+
+    #kirsh-collection .section01-01{
+        margin:50px 0;
+    }
+
+    #kirsh-collection .section01-01 img,#kirsh-collection .section03-02 img{
+        width:100%;
+        margin-top:50px;
+    }
+
+    .section03-01{
+        margin-bottom: 50px;
+    }
+
+    .section04-02{
+        margin:50px 0;
+    }
+    .section04-02-01, .section04-02-02{
+        width:100%;
     }
 }
 @media all and (max-width:768px){
-
-    #kirsh-index .main-box, #kirsh-index .right-box{
-        display: none;
+    .kirsh-contents-text{
+        width:500px;
+        animation: collection4 0.8s steps(4) infinite .4s;
+        background-size: 2000px;
+        height: 70px;
     }
 
-    #kirsh-index .mobile-text-box{
-        display:block;
+    .collection-title{
+        width:60%;
+    }
+
+    .section02 .section02-title{
+        font-size:3.5rem;
+    }
+
+    .section02 .section02-img {
+        width: 500px;
+        height: 749px;
+        background-size: 2000px;
+        animation: section02-01 1.2s steps(4) infinite .4s;
     }
 }
+
+@media all and (max-width:640px){
+
+    .kirsh-contents-text{
+        width:400px;
+        height: 56px;
+        animation: collection5 0.8s steps(4) infinite .4s;
+        background-size: 1600px;
+    }
+
+    .section02 .section02-img {
+        width: 400px;
+        height: 599px;
+        background-size: 1600px;
+        animation: section02-02 1.2s steps(4) infinite .4s;
+    }
+}
+
 @media all and (max-width:480px){
-    #kirsh-index .mobile-text-box{
-        padding:50px 20px;
+    .kirsh-contents-text{
+        width:300px;
+        height: 42px;
+        background-size: 1200px;
+        animation: collection6 0.8s steps(4) infinite .4s;
+    }
+
+    .section02 .section02-title {
+        font-size: 2rem;
+    }
+
+    .section02 .section02-img {
+        width: 300px;
+        height: 449px;
+        background-size: 1200px;
+        animation: section02-03 1.2s steps(4) infinite .4s;
     }
 }
 
 
+/*Kirsh-Lookbook*/
 
-/*Contents*/
+@media all and (max-width:1600px){
+    .lookbook-list{
+        width:32%
+    }
+    .lookbook-list-contents{
+        margin-bottom:50px;
+    }
+}
+
+/*Mobile Start*/
+@media all and (max-width:860px){
+    .category-lookbook-list{
+        display: block;
+    }
+    .lookbook-list{
+        width:100%
+    }
+    .lookbook-list-contents{
+        margin-bottom:80px;
+    }
+}
+
+/*Kirsh-Shop*/
+
+@media all and (max-width:1600px){
+    .product-item-text .product-item-line{
+        width:100%;
+        height: 100%;
+    }
+
+    .shop-item-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 @media all and (max-width:1440px){
+    .shop-item-img{
+        height:350px;
+    }
+}
+
+@media all and (max-width:1280px){
+    .shop-product-item{
+        display: block;
+    }
+    .shop-product-item .product-item-list{
+        width:48%;
+        margin:0.5%;
+    }
+}
+
+@media all and (max-width:1024px){
+    .shop-product-title{
+        font-size:3.5rem;
+    }
+}
+
+
+/*Mobile Start*/
+@media all and (max-width:860px){
+    .category-shop-item{
+        display: block;
+    }
+    .category-shop-list .shop-item-list{
+        width:48%;
+        margin:0.5%;
+    }
+    .shop-item-img {
+        height: 450px;
+    }
 
 }
-@media all and (max-width:1280px){}
-@media all and (max-width:1140px){}
-@media all and (max-width:1080px){}
-@media all and (max-width:1024px){}
-@media all and (max-width:860px){}
-@media all and (max-width:768px){}
-@media all and (max-width:480px){}
-@media all and (max-width:320px){}
+@media all and (max-width:768px){
+    .shop-product-item .product-item-list{
+        width:100%;
+        margin:10px 0;
+    }
+    .shop-item-img {
+        height: 300px;
+    }
+    .shop-product-title{
+        font-size:2rem;
+    }
+}
+
+@media all and (max-width:480px){
+    .shop-item-img {
+        height: 250px;
+    }
+   
+}
+
+
+/*Kirsh-Stockist*/
+
+/*Mobile Start*/
+@media all and (max-width:860px){
+    .kirsh-category-stockist{
+        text-align: center;
+    }
+
+    .kirsh-category-stockist ul li{
+        margin-right:0;
+    }
+
+    .online-stockist ul li, .offline-stockist ul li{
+        width:100%;
+    }
+}
