@@ -140,7 +140,9 @@
   width:700px;
   height: 1049px;
   background: url('../img/kirsh/section02-01.jpg')no-repeat;
+  background-size: cover;
   animation: section02 1.2s steps(4) infinite .4s;
+  overflow: hidden;
 }
 
 @keyframes section02 {
@@ -533,6 +535,10 @@
 
 .instagram-slide .swiper-slide img{
   width:100%;
+}
+
+.swiper-button{
+  outline:none !important;
 }
 
 .swiper-button-next:after,.swiper-button-prev:after{

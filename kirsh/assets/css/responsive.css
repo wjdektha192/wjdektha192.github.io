@@ -6,12 +6,16 @@
     }
 }
 
-/*Mobile Start*/
-@media all and (max-width:860px){
-        /*Footer*/
-        #kirsh-footer .footermenu-contents{
-            line-height: 30px;
-        }
+@media all and (max-width:1280px){
+    .section02 .contents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section02-text{
+        text-align: center;
+        margin-left:0;
+        margin-top:50px;
+    }
 }
 
 @media all and (max-width:768px){
