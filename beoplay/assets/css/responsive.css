@@ -21,7 +21,7 @@
     }
 }
 
-@media all and (max-width:1439px){
+@media all and (max-width:14`px){
 
     /**************Contents****************/ 
 
@@ -357,7 +357,13 @@
 @media all and (max-width:860px){
     /**************Contents****************/ 
 
+    #beoplay-intro video{
+        left:-50%;
+    }
 
+    #beoplay-design .beoplay-design-contents{
+        padding:100px 30px;
+    }
 
     #beoplay-silence{
         background-position: 20%;
@@ -371,7 +377,6 @@
     .center .bottle-img{
         left:50px;
     }
-
 
 
 }
@@ -426,8 +431,8 @@
     }
 
     .center .bottle-img{
-        width:100%;
-        left:0;
+        width:70%;
+        left:17%;
     }
 
     .main-title{
@@ -487,15 +492,57 @@
 
 }
 
+@media all and (max-width:640px){
+    #beoplay-intro video {
+        left: -60%;
+    }
+
+    .center .bottle-img {
+        width:100%;
+        left: 0;
+        top:10px;
+    }
+
+    .main{
+        padding:0;
+    }
+
+    .main-subtitle{
+        margin-bottom: 30px;
+    }
+}
+
 @media all and (max-width:480px){
 
     /**************Contents****************/ 
+    #beoplay-intro video {
+        left: -112%;
+    }
+
     .beoplay-intro-contents .intro-title{
         font-size: 2.6rem;
     }
 
+    /*Sound*/
+    #beoplay-sound .sound-slide02{
+        height: 455px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 8%;
+    }
+
+    /*Product*/
     .center .bottle-bg{
-        width:200px;
+        width:240px;
         height: 350px;
     }
 }
+
+@media all and (max-width:480px){
+
+    /**************Contents****************/ 
+    #beoplay-intro video {
+        left: -160%;
+    }
+}
+
