@@ -139,19 +139,13 @@
         top: 1100px;
     }
 
-
     /*Cartier-product*/
-    #cartier-product .product-text{
-        font-size:2.3rem;
-        margin-bottom:0;
+    #cartier-product{
+        background: url('img/section08/sec-bg.jpg')no-repeat left;
     }
-
-    #cartier-product .product-right-name{
-        font-size:1.4rem;
-    }
-
-    #cartier-product .product-right-price{
-        font-size:1.2rem;
+      
+    #cartier-product .product-slide-btn{
+        width:100%;
     }
 
 }
@@ -219,10 +213,11 @@
 
     /*Cartier-product*/
     #cartier-product .cartier-product-slide img{
-        width:35%;
+        width:40%;
+        margin-left:35px;
     }
-    .swiper-button-next, .swiper-button-prev{
-        top:50%
+    #cartier-product .swiper-pagination-fraction{
+        display: none;
     }
     .swiper-button-next{
         right: 36px;
@@ -232,14 +227,6 @@
     }
     .swiper-button-next img, .swiper-button-prev img{
         width:100px;
-    }
-    #cartier-product .cartier-product-slide img{
-        margin-left:35px;
-    }
-    #cartier-product .product-right-text{
-        position:unset;
-        text-align: center;
-        margin-top: 25px;
     }
 }
 
@@ -353,23 +340,13 @@
 
 
     /*Cartier-product*/
-    #cartier-product {
-        background-position: center bottom;
-        background-size: 100%;
-        background-color: #ededed;
-    }
-    #cartier-product .product-text{
-        font-size:1.8rem
-    }
     #cartier-product .cartier-product-slide img{
         margin-left:25px;
         width:50%;
     }
-    .swiper-button-next img, .swiper-button-prev img {
-        width: 80px;
-    }
-    #cartier-product .product-right-name{
-        font-size:1.3rem;
+
+    .slide-text-title {
+        font-size: 1.5rem;
     }
 
     /*cartier-text*/
@@ -425,12 +402,15 @@
         margin-top: 280px;
     }
 
-    .cartier-slide-text .line{
-        display: none;
+    .slide-text-title {
+        font-size: 1.2rem;
+        margin-bottom:20px;
     }
-    .cartier-slide-text{
-        display: block;
-        text-align: center;
+    .slide-text-price {
+        font-size: 1rem;
+    }
+    .slide-text-ex{
+        display: none;
     }
 
     .cartier-gallery-tit .gallery-tit-text {
@@ -453,6 +433,7 @@
     .swiper-button-prev{
         left: 20px;
     }
+
 
 
 
