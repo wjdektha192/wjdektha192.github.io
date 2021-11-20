@@ -100,7 +100,7 @@ window.addEventListener("load", function () {
 
 //////////////////////////////////// Product Slide
 
-var swiper = new Swiper(".mySwiper", {
+var productSwiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".product-next-button",
     prevEl: ".product-prev-button"
@@ -115,6 +115,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-swiper.on('slideChange', function (sld) {
+productSwiper.on('slideChange', function (sld) {
   document.body.setAttribute('data-sld', sld.realIndex);
 });
