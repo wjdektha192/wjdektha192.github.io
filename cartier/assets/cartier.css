@@ -361,70 +361,97 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 /*Product*/
 #cartier-product{
-  background: url('img/section08/sec-bg.jpg') no-repeat;
-  background-size: cover;
-  padding:100px 0 50px;
-  box-sizing: border-box;
-}
-
-#cartier-product .product-text{
-  text-align: center;
-  font-size:3rem;
-  font-weight: 600;
-  letter-spacing: -0.1rem;
-  margin-bottom:50px;
-}
-
-#cartier-product .product-text span{
-  color:var(--category-color);
-}
-
-#cartier-product .mySwiper {
-  height: 100%;
-  display: flex;
-  flex-grow: 1;
-  position: relative;
-}
-
-#cartier-product .cartier-product-slide{
-  background-size: cover;
-  padding: 42px 0 30px;
-  display: flex;
-  flex-grow: 1;
-  position: relative;
-}
-
-#cartier-product .product-left{
   width:100%;
+  height: auto;
+  background: url('img/section08/sec-bg.jpg')no-repeat center;
+  padding:100px 0;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+#cartier-product .product-slide-img{
+  width:100%;
+  /* background: yellow; */
+  margin:0 auto;
   text-align: center;
-  position:relative;
 }
 
-#cartier-product .product-right-text{
-  text-align: left;
-  position:absolute;
-  bottom:50px;
-  left:900px;
+#cartier-product .product-slide-text{
+  width:100%;
+  padding:30px;
+  box-sizing: border-box;
+  /* background: wheat; */
+  text-align: center;
 }
 
-#cartier-product .product-right-name{
-  font-size: 1.8rem;
+.slide-text-title{
+  font-size:1.8rem;
+  letter-spacing: -1px;
+  font-weight: 900;
+}
+
+.slide-text-ex{
+  letter-spacing: -0.5px;
+  margin:10px 0 40px;
+}
+
+.slide-text-price{
+  font-size:1.5rem;
   font-weight: 700;
-  letter-spacing: -0.1rem;
-  transition-delay: 0.2s;
-  margin-bottom:10px;
-}
-#cartier-product .product-right-price{
-  font-size: 1.4rem;
-  transition-delay: 0.3s;
 }
 
-#cartier-product button:hover{
-  background: var(--category-color);
-  transition:0.7s;
+#cartier-product .product-slide-btn{
+  width:1000px;
+  height:auto;
+  position: absolute;
+  bottom:100px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 5;
 }
+
+
+
+
+
+#cartier-product .swiper-pagination-fraction{
+  width:auto;
+  top:50%;
+  right: 0;
+  bottom:auto;
+  left: auto;
+}
+
+.swiper-pagination{
+  color:#999;
+}
+
+.swiper-pagination-current,.slide-numbering01{
+  font-size:3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color:#555;
+}
+
+.swiper-pagination-total, .slide-numbering02{
+  font-size:1.5rem;
+  letter-spacing: -1px;
+}
+
+
+
+
 
 .swiper-slide {
   opacity: 0 !important;
@@ -459,6 +486,30 @@
 .swiper-button-prev:after{
   content: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Text*/
 

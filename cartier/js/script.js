@@ -126,6 +126,15 @@ var swiper = new Swiper(".mySwiper", {
   },
   effect: "fade",
   loop: "infinite",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class="slide-numbering01">0</span>' +'<span class="' + currentClass + '"></span>' +
+             '  /   <span class="slide-numbering02">0</span>' +
+             '<span class="' + totalClass + '"></span>';
+    },
+  },
 });
 
 swiper.on('slideChange', function (sld) {
