@@ -10,15 +10,16 @@ $(function () {
     });
 
     //Category Text
-    $('.kirsh-category-text p').delay(1000).addClass('on');
+    $('.kirsh-category-text p').delay(500).addClass('on');
 
     //Shop Instagram Slide
     new Swiper(".instagram-slide", {
         slidesPerView:5,
         loop:true,
+        autoplay:true,
         navigation: {
             nextEl: ".insta-button-next",
-            prevEl: ".insta-button-prev",
+            prevEl: ".insta-button-prev",bac1cb
           },
           breakpoints: {
             320: {
