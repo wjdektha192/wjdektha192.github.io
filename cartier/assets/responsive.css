@@ -212,6 +212,10 @@
 
 
     /*Cartier-product*/
+    #cartier-product{
+        height: 100vh;
+    }
+
     #cartier-product .cartier-product-slide img{
         width:40%;
         margin-left:35px;
