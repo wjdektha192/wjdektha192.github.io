@@ -89,6 +89,10 @@
         line-height: 1.5rem;
     }
 
+    /*cartier-video*/
+    #cartier-video .cartier-video-text{
+        width:100%;
+    }
 
      /*cartier-product*/
      #cartier-product{
@@ -420,7 +424,6 @@
     #cartier-video video {
         margin-top: 280px;
     }
-
 
     .cartier-slide-text .line{
         display: none;
