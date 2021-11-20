@@ -293,8 +293,13 @@
         display: none;
     }
     #cartier-about .cartier-about-text{
+        width:100%;
         bottom: auto;
         top:0;
+    }
+
+    #cartier-about button{
+        margin-top:0;
     }
 
 
@@ -305,6 +310,7 @@
     #cartier-video .cartier-text-title br{
         display: none;
     }
+
     
     
     /*Cartier-slide*/

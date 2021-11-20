@@ -7,10 +7,9 @@
     box-sizing: border-box;
 }
 
-body {
+body.on{
     overflow: hidden;
 }
-  
 
 p, span, a, ul li, h1, h2, h3, h4, h5, h6{
     font-family: 'Shippori Mincho', serif;

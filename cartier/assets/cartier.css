@@ -1,5 +1,61 @@
-/*Cartier-main*/
+/*Cartier-loading*/
+.loading{
+  width:100%;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  z-index: 99999999;
+  background: #fff;
+}
 
+.clock{
+  width:300px;
+  height: 300px;
+  background-size:cover;
+  background: url('img/loading/clock-page.png')no-repeat;
+  animation: spin 15s infinite linear;
+}
+
+.pointers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+}
+
+.pointers:before,
+.pointers:after {
+  content: "";
+  position: absolute;
+  width:3px;
+  z-index: -1;
+  transform-origin: 2px 0;
+}
+
+.pointers:before {
+  height: 100px;
+  background: url('img/loading/clock-line01.png') no-repeat;
+  animation: spin 5s infinite linear;
+}
+
+.pointers:after {
+  height: 60px;
+  background: url('img/loading/clock-line02.png') no-repeat;
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(var(--deg, 360deg));
+  }
+}
+
+
+/*Cartier-main*/
 #cartier-main{
   width:100%;
   height: auto;

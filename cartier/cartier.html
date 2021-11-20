@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favi.ico" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
@@ -15,10 +17,18 @@
     <link rel='stylesheet' href='assets/cartier.css'>
     <link rel='stylesheet' href='assets/responsive.css'>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
     <title>Pasha de Cartier</title>
 </head>
 
-<body>
+<body class="on">
+    <!--Loading-->
+    <div class="loading flex">
+        <div class="clock flex">
+            <div class="pointers"></div>
+          </div>
+    </div>
     <!--Main-->
     <div id="cartier-main" class="cartier-main">
         <div class="contents">
@@ -125,7 +135,7 @@
                 </p>
             </div>
         </div>
-        <video src="assets/img/section04/PASHADECARTIER.mp4" autoplay muted loop></video>
+        <video src="assets/img/section04/PASHADECARTIER.mp4" autoplay muted loop playsinline></video>
     </div>
 
     <!--Pasha de Cartier Slide-->
@@ -510,6 +520,11 @@
         <div class="contents">
             <img src="assets/img/footer/footer-logo.jpg" alt="footerlogo" />
     </footer>
+
+    <script>
+        //Loading
+        $('.loading').delay(1000).fadeOut(500);
+    </script>
 
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
