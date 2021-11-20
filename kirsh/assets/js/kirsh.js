@@ -16,9 +16,10 @@ $(function () {
     new Swiper(".instagram-slide", {
         slidesPerView:5,
         loop:true,
+        autoplay:true,
         navigation: {
             nextEl: ".insta-button-next",
-            prevEl: ".insta-button-prev",bac1cb
+            prevEl: ".insta-button-prev",
           },
           breakpoints: {
             320: {
