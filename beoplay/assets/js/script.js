@@ -41,7 +41,7 @@ ScrollTrigger.create({
 
 //////////////////////////////////// Sound Slide
 
-var swiper = new Swiper(".sound-slide01", {
+var soundswiper01 = new Swiper(".sound-slide01", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -51,7 +51,7 @@ var swiper = new Swiper(".sound-slide01", {
   simulateTouch: false,
 });
 
-var swiper = new Swiper(".sound-slide02", {
+var soundswiper02 = new Swiper(".sound-slide02", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -61,7 +61,7 @@ var swiper = new Swiper(".sound-slide02", {
   simulateTouch: false,
 });
 
-var swiper = new Swiper(".sound-slide03", {
+var soundswiper03 = new Swiper(".sound-slide03", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -115,6 +115,6 @@ var productSwiper = new Swiper(".mySwiper", {
 });
 
 
-productSwiper.on('slideChange', function (sld) {
-  document.body.setAttribute('data-sld', sld.realIndex);
-});
+// productSwiper.on('slideChange', function (sld) {
+//   document.body.setAttribute('data-sld', sld.realIndex);
+// });
