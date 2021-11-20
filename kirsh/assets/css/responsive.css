@@ -42,10 +42,15 @@
     #kirsh-header{
         text-align: left;
     }
+
+    #kirsh-header .kirsh-symbol{
+        width:35px;
+    }
     .user-menu{
         display: none;
     }
     .user-menu-btn{
+        top:30px;
         right: 20px;
     }
 
