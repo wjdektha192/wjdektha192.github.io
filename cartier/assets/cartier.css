@@ -535,6 +535,31 @@
   border-bottom:1px solid #ff0000;
 }
 
+#cartier-info .info-social{
+  width:100%;
+  padding:50px 0;
+  border-top: 1px solid #eee;
+}
+
+#cartier-info .info-social ul li{
+  display: inline-block;
+  margin:0 20px;
+}
+
+#cartier-info .info-social a{
+  color:#000;
+}
+
+#cartier-info .info-social i{
+  font-size:1.5rem;
+  transition: 0.5s;
+}
+
+#cartier-info .info-social i:hover{
+  transition: 0.5s;
+  color: var(--category-color);
+}
+
 
 /*Footer*/
 footer{
