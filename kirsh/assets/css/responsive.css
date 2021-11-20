@@ -156,6 +156,8 @@
 
 /*Mobile Start*/
 @media all and (max-width:860px){
+
+
     #kirsh-collection .section01-01, #kirsh-collection .section03-02,.section04-02{
         display: block;
     }
@@ -184,8 +186,8 @@
     .kirsh-contents-text{
         width:500px;
         animation: collection4 0.8s steps(4) infinite .4s;
-        background-size: 2000px;
-        height: 70px;
+        background: url('../img/kirsh/mcollection-text.png')no-repeat;
+        height: 547px;
     }
 
     .collection-title{
@@ -208,7 +210,7 @@
 
     .kirsh-contents-text{
         width:400px;
-        height: 56px;
+        height:438px;
         animation: collection5 0.8s steps(4) infinite .4s;
         background-size: 1600px;
     }
@@ -224,7 +226,7 @@
 @media all and (max-width:480px){
     .kirsh-contents-text{
         width:300px;
-        height: 42px;
+        height: 328px;
         background-size: 1200px;
         animation: collection6 0.8s steps(4) infinite .4s;
     }
