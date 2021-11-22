@@ -38,6 +38,12 @@ a:hover, a:focus {
     justify-content: center;
 }
 
+.vertical-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .content-section {
     padding: 100px 0;
     text-align: center;
