@@ -202,7 +202,10 @@ color: #ffe400;
   max-width: 860px;
 }
 
-.ui-contents img{width:100%; max-width:1600px; display:block; margin:0 auto;}
+.ui-contents img{
+  display:block; 
+  margin:0 auto;
+}
 
 
 /*Contact*/
