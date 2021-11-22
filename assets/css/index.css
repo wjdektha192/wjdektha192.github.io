@@ -133,22 +133,68 @@ color: #ffe400;
   box-sizing: border-box;
   background-color: rgba(55,55,55,0.9);
   z-index: 2;
+  line-height: 25px;
 }
 
 .work-title span{
   letter-spacing: -0.5px;
+  font-family: 'Gothic A1', sans-serif;
+  color:#ddd;
 }
 
 .work-name{
+  display: inline-block;
   font-size: 2.5rem;
   font-weight: 600;
-  color: #ffe400;
+  color: #ffe400 !important;
+  margin:10px 0;
 }
 
 .work-info{
-  font-family: 'Gothic A1', sans-serif;
+  font-size: 1.5rem;
+}
+
+.work-ex{
   font-size: 1.2rem;
-  color:#fff;
+}
+
+
+/*Contents*/
+
+.detail-contents{
+  width:1140px;
+  margin:0 auto;
+  text-align: center;
+  padding:50px 0;
+  box-sizing: border-box;
+}
+.detail-title{
+  margin-bottom:30px;
+}
+
+.detail-title span{
+  font-family: 'Gothic A1', sans-serif;
+  letter-spacing: -0.5px;
+  color:#ddd;
+  line-height: 35px;
+}
+
+.work-contents-name{
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom:10px;
+  border-bottom:2px solid #ddd;
+}
+
+.detail-design-contents{
+  width:100%;
+  max-width: 860px;
+}
+
+.ui-contents img{width:100%; max-width:1600px; display:block; margin:0 auto;}
+
+@media screen and (max-width:768px) and (min-width:320px){
+  .ui-contents img{width:100%;}
 }
 
 
