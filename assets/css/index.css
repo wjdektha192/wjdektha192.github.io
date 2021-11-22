@@ -42,10 +42,12 @@ color: #ffe400;
 }
 
 #about p {
+  font-family: 'Gothic A1', sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
-  line-height: 1.7;
+  font-size: 1.7rem;
+  line-height: 2.2;
   color:#555;
+  letter-spacing: -0.5px;
 }
 
 .scroll-indicator {
