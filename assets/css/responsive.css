@@ -54,6 +54,9 @@
     #skills .skills-contents{
       width:100%;
     }
+
+    .ui-contents img{width:100%; max-width: 100%;}
+
 }
 
 
