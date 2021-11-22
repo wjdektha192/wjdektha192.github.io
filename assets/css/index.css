@@ -198,11 +198,12 @@ color: #ffe400;
 }
 
 .detail-design-contents{
-  width:100%;
+  width:94%;
   max-width: 860px;
 }
 
 .ui-contents img{
+  max-width: 1600px;
   display:block; 
   margin:0 auto;
 }

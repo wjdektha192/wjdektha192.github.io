@@ -1,8 +1,15 @@
 @media (max-width: 1600px) {
   .ui-contents img{
-    width:95%;
+    width:94%;
   }
 }
+
+@media (max-width: 1140px) {
+  .detail-contents{
+    width:100%
+  }
+}
+
 
 @media (max-width: 980px) {
     .skills-text {
@@ -99,6 +106,9 @@
     }
     .navbar-custom .nav > li > a:hover::before {
     border-bottom-color: #ffe400;
+    }
+    .work-contents-name {
+      font-size: 1.5rem;
     }
   }
   
