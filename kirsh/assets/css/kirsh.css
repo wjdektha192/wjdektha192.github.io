@@ -39,10 +39,16 @@
   height: 900px;
   background: url('../img/kirsh/collection01.png')no-repeat center;
   background-size: cover;
-  position: fixed;
-  left: 0;
+  background-attachment: fixed;
+  position: absolute;
   top: 0;
-  z-index: 2;
+}
+
+#kirsh-collection{
+  width:100%;
+  height: auto;
+  position:relative;
+  z-index: 9;
 }
 
 #kirsh-contents{
@@ -59,6 +65,7 @@
   height: 134px;
   background: url('../img/kirsh/collection-text.png')no-repeat;
   animation: collection 0.8s steps(4) infinite .4s;
+  z-index: 5;
 }
 
 @keyframes collection {
@@ -95,20 +102,6 @@
   to {
       background-position: -1200px;
   }
-}
-
-#kirsh-container{
-  width:100%;
-  height: auto;
-  position: relative;
-  z-index: 9;
-}
-
-#kirsh-collection{
-  width:100%;
-  height: auto;
-  background: #fff;
-  box-sizing: border-box;
 }
 
 #kirsh-collection .section01{

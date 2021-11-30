@@ -39,6 +39,17 @@
     .kirsh-category-text p:first-child{
         bottom:85px;
     }
+
+    /*Footer*/
+    .footermenu-contents ul li{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+    }
+    .footermenu-contents ul li:after{
+        margin:0;
+        content: '';
+    }
 }
 
 @media all and (max-width:640px){
@@ -78,14 +89,7 @@
     .social-contents .footer-logo{
         width:150px;
     }
-    .footermenu-contents ul li{
-        display: block;
-        text-align: center;
-    }
-    .footermenu-contents ul li:after{
-        margin:0;
-        content: '';
-    }
+    
     #kirsh-footer .information-contents{
         text-align: center;
         padding-top:30px;

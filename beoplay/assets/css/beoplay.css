@@ -257,7 +257,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px 10vw;
+  padding: 120px 10vw 50px;
 }
 .pin-wrap > * {
   min-width: 60vw;
@@ -292,7 +292,7 @@
 }
 
 .technology-center-img, .technology-right-img{
-  margin:0 150px;
+  margin:0 300px 0 150px;
   box-sizing: border-box;
 }
 

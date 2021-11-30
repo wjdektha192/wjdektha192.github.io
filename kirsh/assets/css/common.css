@@ -277,19 +277,18 @@ body.on{
     padding:20px 0;
 }
 
-.footermenu-contents ul li{
+.footermenu-contents li{
     display: inline-block;
+    font-weight: bold;
 }
 
-.footermenu-contents ul li:after{
+.footermenu-contents li::after{
     content: "|";
     margin:20px;
 }
 
-
-.footermenu-contents a{
-    color:#bac1cb;
-    font-weight: bold;
+.footermenu-contents li:last-child::after{
+    content: none;
 }
 
 #kirsh-footer .information-contents{

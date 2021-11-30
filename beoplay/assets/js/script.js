@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
 
   gsap.to(".pin-wrap", {
     scrollTrigger: {
-      scrub: 1,
+      scrub: 0,
       trigger: "#beoplay-technology",
       pin: true,
       start: "top top",

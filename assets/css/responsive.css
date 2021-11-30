@@ -104,6 +104,9 @@
     .navbar-custom .nav li.active a {
     color: #ffe400;
     }
+    .skills-section{
+      background-position: 20%;
+    }
     .navbar-custom .nav > li > a:hover::before {
     border-bottom-color: #ffe400;
     }
