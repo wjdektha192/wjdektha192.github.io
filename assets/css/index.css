@@ -175,7 +175,7 @@ color: #ffe400;
 /*Contents*/
 
 .detail-contents{
-  width:1140px;
+  width:1440px;
   margin:0 auto;
   text-align: center;
   padding:50px 0;
@@ -202,6 +202,10 @@ color: #ffe400;
 .detail-design-contents{
   width:94%;
   max-width: 860px;
+}
+
+.work-design-contents{
+  width:100%;
 }
 
 .ui-contents img{
